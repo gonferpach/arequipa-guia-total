@@ -1,0 +1,205 @@
+"use client";
+
+import { useState } from "react";
+
+const API =
+  process.env.NEXT_PUBLIC_API_URL || "http://localhost:4005";
+
+const emptyForm = {
+  name: "",
+  description: "",
+  category: "",
+  vision: "",
+  mision: "",
+  historia: "",
+  quienesSomos: "",
+  telefono: "",
+  email: "",
+  direccion: "",
+  fotos: "",
+  whatsapp: "",
+  facebook: "",
+  instagram: "",
+  tiktok: "",
+  youtube: "",
+};
+
+export default function AdminPage() {
+  const [form, setForm] = useState(emptyForm);
+  const [status, setStatus] = useState(null); // { ok, msg, slug }
+  const [loading, setLoading] = useState(false);
+
+  const set = (k) => (e) => setForm({ ...form, [k]: e.target.value });
+
+  async function submit(e) {
+    e.preventDefault();
+    setLoading(true);
+    setStatus(null);
+    try {
+      const fotos = form.fotos
+        .split("\n")
+        .map((u) => u.trim())
+        .filter(Boolean);
+
+      const res = await fetch(`${API}/api/landings`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          ...form,
+          fotos,
+          redes: {
+            whatsapp: form.whatsapp,
+            facebook: form.facebook,
+            instagram: form.instagram,
+            tiktok: form.tiktok,
+            youtube: form.youtube,
+          },
+        }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Error del servidor");
+      setStatus({
+        ok: true,
+        msg: `✅ Landing creada con plantilla: ${data.template.template}`,
+        slug: data.slug,
+      });
+      setForm(emptyForm);
+    } catch (err) {
+      setStatus({ ok: false, msg: `❌ ${err.message}` });
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  const input =
+    "w-full px-4 py-2.5 rounded-lg bg-gray-900 border border-gray-700 focus:border-cyan-400 focus:outline-none text-white placeholder-gray-500";
+  const label = "block text-sm font-medium text-gray-300 mb-1.5";
+
+  return (
+    <main className="min-h-screen py-12 px-4">
+      <div className="max-w-3xl mx-auto">
+        <h1 className="text-3xl font-bold mb-2">Crear landing 🚀</h1>
+        <p className="text-gray-400 mb-8">
+          Completa los datos de tu negocio. La IA elegirá la mejor plantilla.
+        </p>
+
+        {status && (
+          <div
+            className={`mb-6 p-4 rounded-lg border ${
+              status.ok
+                ? "border-green-500/50 bg-green-500/10 text-green-300"
+                : "border-red-500/50 bg-red-500/10 text-red-300"
+            }`}
+          >
+            {status.msg}
+            {status.ok && (
+              <a
+                href={`/p/${status.slug}`}
+                target="_blank"
+                className="ml-2 underline font-semibold"
+              >
+                Ver mi landing →
+              </a>
+            )}
+          </div>
+        )}
+
+        <form onSubmit={submit} className="space-y-5">
+          <div className="grid md:grid-cols-2 gap-4">
+            <div>
+              <label className={label}>Nombre del negocio *</label>
+              <input required className={input} value={form.name} onChange={set("name")} placeholder="Ej: Clínica Dental Arequipa" />
+            </div>
+            <div>
+              <label className={label}>Categoría (opcional)</label>
+              <input className={input} value={form.category} onChange={set("category")} placeholder="Ej: salud, restaurante, comida" />
+            </div>
+          </div>
+
+          <div>
+            <label className={label}>Descripción *</label>
+            <textarea required rows={3} className={input} value={form.description} onChange={set("description")} placeholder="¿Qué hace tu negocio? Mientras más detalle, mejor elige la IA." />
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-4">
+            <div>
+              <label className={label}>Visión</label>
+              <textarea rows={2} className={input} value={form.vision} onChange={set("vision")} placeholder="¿A dónde quieres llegar?" />
+            </div>
+            <div>
+              <label className={label}>Misión</label>
+              <textarea rows={2} className={input} value={form.mision} onChange={set("mision")} placeholder="¿Para qué existe tu negocio?" />
+            </div>
+          </div>
+
+          <div>
+            <label className={label}>Historia</label>
+            <textarea rows={3} className={input} value={form.historia} onChange={set("historia")} placeholder="Cuéntanos cómo empezó tu negocio..." />
+          </div>
+
+          <div>
+            <label className={label}>Quiénes somos</label>
+            <textarea rows={3} className={input} value={form.quienesSomos} onChange={set("quienesSomos")} placeholder="Tu equipo, tu gente..." />
+          </div>
+
+          <div>
+            <label className={label}>Fotos (una URL por línea — mock upload)</label>
+            <textarea rows={3} className={input} value={form.fotos} onChange={set("fotos")} placeholder={"https://ejemplo.com/foto1.jpg\nhttps://ejemplo.com/foto2.jpg"} />
+          </div>
+
+          <fieldset className="border border-gray-700 rounded-xl p-5 space-y-4">
+            <legend className="px-2 font-semibold">Contacto</legend>
+            <div className="grid md:grid-cols-3 gap-4">
+              <div>
+                <label className={label}>Teléfono</label>
+                <input className={input} value={form.telefono} onChange={set("telefono")} placeholder="+51 987 654 321" />
+              </div>
+              <div>
+                <label className={label}>Email</label>
+                <input type="email" className={input} value={form.email} onChange={set("email")} placeholder="hola@negocio.pe" />
+              </div>
+              <div>
+                <label className={label}>Dirección</label>
+                <input className={input} value={form.direccion} onChange={set("direccion")} placeholder="Calle Los Andes 123, Arequipa" />
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset className="border border-gray-700 rounded-xl p-5 space-y-4">
+            <legend className="px-2 font-semibold">Redes sociales</legend>
+            <div className="grid md:grid-cols-2 gap-4">
+              <div>
+                <label className={label}>WhatsApp</label>
+                <input className={input} value={form.whatsapp} onChange={set("whatsapp")} placeholder="https://wa.me/51987654321" />
+              </div>
+              <div>
+                <label className={label}>Facebook</label>
+                <input className={input} value={form.facebook} onChange={set("facebook")} placeholder="https://facebook.com/minegocio" />
+              </div>
+              <div>
+                <label className={label}>Instagram</label>
+                <input className={input} value={form.instagram} onChange={set("instagram")} placeholder="https://instagram.com/minegocio" />
+              </div>
+              <div>
+                <label className={label}>TikTok</label>
+                <input className={input} value={form.tiktok} onChange={set("tiktok")} placeholder="https://tiktok.com/@minegocio" />
+              </div>
+              <div>
+                <label className={label}>YouTube</label>
+                <input className={input} value={form.youtube} onChange={set("youtube")} placeholder="https://youtube.com/@minegocio" />
+              </div>
+            </div>
+          </fieldset>
+
+          <button
+            type="submit"
+            disabled={loading}
+            className="w-full py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-400 hover:to-purple-400 font-bold text-gray-950 disabled:opacity-50 transition"
+          >
+            {loading ? "🧠 La IA está eligiendo tu plantilla..." : "Generar mi landing ✨"}
+          </button>
+        </form>
+      </div>
+    </main>
+  );
+}
