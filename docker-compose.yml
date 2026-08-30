@@ -19,9 +19,51 @@ services:
     environment:
       - PORT=4005
       - NODE_ENV=production
+      # RAG: pgvector (opcional; sin OPENAI_API_KEY usa fallback hash)
+      - DATABASE_URL=postgres://2braind:2braind@landing_pg:5432/2braind
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      # Scraper redes sociales
+      - SCRAPER_ENABLED=${SCRAPER_ENABLED:-true}
+      # Deploy OpenShip
+      - OPENSHIP_URL=${OPENSHIP_URL:-http://164.68.126.30:4100}
+      - OPENSHIP_TOKEN=${OPENSHIP_TOKEN:-}
+      - OPENSHIP_LANDINGS_DIR=/app/landings
+      - PUBLIC_LANDINGS_BASE=${PUBLIC_LANDINGS_BASE:-}
     volumes:
       - backend-data:/app/data
+      - landings-static:/app/landings
+    depends_on:
+      - landing_pg
+    restart: unless-stopped
+
+  # Postgres + pgvector para RAG (embeddings de plantillas)
+  landing_pg:
+    image: pgvector/pgvector:pg17
+    environment:
+      - POSTGRES_USER=2braind
+      - POSTGRES_PASSWORD=2braind
+      - POSTGRES_DB=2braind
+    volumes:
+      - landing-pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U 2braind"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
+
+  # Nginx opcional para servir las landings estáticas publicadas por OpenShip fallback
+  landings_nginx:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - landings-static:/usr/share/nginx/html:ro
+    depends_on:
+      - backend
     restart: unless-stopped
 
 volumes:
   backend-data:
+  landing-pgdata:
+  landings-static:

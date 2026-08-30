@@ -1,7 +1,7 @@
 {
   "name": "2braind-landing-factory-backend",
-  "version": "1.0.0",
-  "description": "API de fábrica de landings 2braind",
+  "version": "1.1.0",
+  "description": "API de fábrica de landings 2braind — RAG pgvector, scraper social, palette, SEO, deploy OpenShip",
   "main": "src/server.js",
   "type": "module",
   "scripts": {
@@ -9,8 +9,10 @@
     "dev": "node --watch src/server.js"
   },
   "dependencies": {
+    "cheerio": "^1.0.0",
     "cors": "^2.8.5",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "pg": "^8.12.0"
   },
   "engines": {
     "node": ">=18"
