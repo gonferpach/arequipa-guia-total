@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "guia": "Arequipa Guía Total",
+    "idiomas": ["es", "en"],
+    "seccion": {"es": "Agenda y Eventos", "en": "What's On & Events"},
+    "version": "v1 — 2026-09-06",
+    "fuentes": ["arequipa.net/es/events (recurrentes, verificado 18-09-06)", "Wikipedia Arequipa (Fiestas)"],
+    "nota": {"es": "Fechados anuales: fechas exactas en pasada de verificación", "en": "Annual dated events: exact dates pending verification pass"}
+  },
+  "recurrentes": [
+    {"id": "R1", "nombre": "Feria Artesanal de Yanahuara", "cuando": {"es": "Sábados 8:00–14:00", "en": "Saturdays 8:00 AM–2:00 PM"}, "lugar": "Malecón Bolognesi, Yanahuara", "tipo": "feria-artesanal", "precio": {"es": "Gratuito", "en": "Free"}, "descripcion": {"es": "Artesanos de Arequipa, Puno y Cusco: textiles de alpaca y vicuña, cerámica, joyería de plata y retablos. Combina con desayuno en el malecón y la vista al Misti.", "en": "Artisans from Arequipa, Puno and Cusco: alpaca and vicuña textiles, pottery, silver jewelry and retablos. Combine with breakfast on the promenade and the Misti view."}},
+    {"id": "R2", "nombre": "Tour de Picanterías", "cuando": {"es": "Lunes y viernes 11:00–14:00", "en": "Mondays and Fridays 11:00 AM–2:00 PM"}, "lugar": "Yanahuara, Cayma y alrededores", "tipo": "tour-gastronomico", "precio": {"es": "~S/.40–60 p/p", "en": "~S/.40–60 (~$11–17) pp"}, "descripcion": {"es": "Tour guiado por 2–3 picanterías auténticas: platos de temporada, el ritual del picante y la chicha de bienvenida. Reserva previa.", "en": "Guided tour of 2–3 authentic picanterías: seasonal dishes, the picante ritual and the welcome chicha. Book ahead."}},
+    {"id": "R3", "nombre": "Mañanas de Mercado San Camilo", "cuando": {"es": "Todos los días 6:00–18:00 (mejor 7–10 am)", "en": "Every day 6:00 AM–6:00 PM (best 7–10 AM)"}, "lugar": "Piérola / Mercaderes, Centro Histórico", "tipo": "mercado", "precio": {"es": "S/.10–15 almuerzo", "en": "S/.10–15 (~$3–4) lunch"}, "descripcion": {"es": "El mercado corazón de Arequipa desde 1848: camarones del Chili, queso de Characato, chicha de guiñapo fresca, jugos y desayunos de pan de tres puntas.", "en": "Arequipa's food heart since 1848: Chili river shrimp, Characato cheese, fresh guiñapo chicha, juices and three-corner bread breakfasts."}}
+  ],
+  "fechados": [
+    {"id": "F1", "nombre": "Fiestas de Arequipa", "fecha": "15 de agosto", "repite": "anual", "tipo": "festividad", "descripcion": {"es": "La semana fundacional (1540): serenata en la Plaza, desfile, ferias y la ciudad en su máximo esplendor. El mejor momento para visitar.", "en": "Founding week (1540): serenade at the Plaza, parade, fairs and the city at its best. The best time to visit."}},
+    {"id": "F2", "nombre": "Festival del Adobo", "fecha": {"es": "julio (por verificar)", "en": "July (to verify)"}, "repite": "anual", "tipo": "festival-gastronomico", "descripcion": {"es": "El adobo arequipeño (cerdo marinado en chicha de guiñapo, inventado en Cayma ~1525) protagoniza este festival con miles de platos.", "en": "Arequipa's adobo (pork marinated in guiñapo chicha, invented in Cayma ~1525) stars in this festival serving thousands of plates."}},
+    {"id": "F3", "nombre": "Aniversarios de la Campiña", "fecha": {"es": "Varias fechas (por verificar)", "en": "Multiple dates (to verify)"}, "repite": "anual", "tipo": "aniversario-distrital", "descripcion": {"es": "Los 8 distritos de la campiña (Yanahuara, Cayma, Sachaca, Tiabaya, Uchumayo, Sabandía, Characato, Paucarpata) celebran su fundación con ferias, yaravíes y comida en sus plazas.", "en": "The 8 countryside districts celebrate their founding with fairs, yaravíes and food in their main squares — dates on verification pass."}}
+  ]
+}

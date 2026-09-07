@@ -1,6 +1,5 @@
-node_modules
-.next
-dist
-.env
+node_modules/
+.next/
 *.log
-.DS_Store
+.env
+.env.*

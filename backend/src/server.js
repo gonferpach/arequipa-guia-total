@@ -5,6 +5,9 @@ import { fileURLToPath } from "url";
 import fs from "fs";
 import { selectTemplate } from "./aiSelector.js";
 import { listTemplates } from "./templates.js";
+import { gastronomiaRouter } from "./gastronomia.js";
+import directoriosRouter from "./directorios.js";
+import guiaChatRouter from "./guia-chat.js";
 import { seedTemplates, queryTemplate, ragConfig } from "./lib/rag.js";
 import { scrapeAll, scrapeInstagram, scrapeFacebook, scrapeTikTok } from "./lib/scraper.js";
 import { extractPalette } from "./lib/palette.js";
@@ -272,6 +275,11 @@ app.get("/api/landings/:slug", (req, res) => {
   if (!landing) return res.status(404).json({ error: "Landing no encontrada" });
   res.json(landing);
 });
+
+// ---------- Gastronomía (votos usuarios) ----------
+app.use("/api/gastronomia", gastronomiaRouter);
+app.use("/api/directorios", directoriosRouter);
+app.use("/api/guia", guiaChatRouter);
 
 // ---------- Deploy OpenShip ----------
 

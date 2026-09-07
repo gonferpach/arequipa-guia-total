@@ -18,6 +18,12 @@ export default function Home() {
           Crear mi landing →
         </Link>
         <a
+          href="/guia"
+          className="px-6 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 font-semibold text-gray-950 transition"
+        >
+          🦞 Arequipa Guía Total
+        </a>
+        <a
           href="/p/demo-clinica"
           className="px-6 py-3 rounded-xl border border-gray-700 hover:border-cyan-400 font-semibold transition"
         >

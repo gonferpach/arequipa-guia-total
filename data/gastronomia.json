@@ -1,0 +1,1607 @@
+{
+  "meta": {
+    "proyecto": "Gastronomía tradicional campiña Arequipa",
+    "version": "1.0 - 2026-09-05",
+    "distritos": 8,
+    "locales": 48,
+    "categorias": [
+      "picantería",
+      "chicharronería",
+      "ruta-senca",
+      "ruta-loncco",
+      "huarique",
+      "heladería"
+    ],
+    "criterios": [
+      "precio",
+      "platos",
+      "atencion",
+      "limpieza",
+      "infraestructura",
+      "decoracion"
+    ],
+    "fuente": "~/Jarviz-Vault/02-Investigacion/gastronomia/arequipena-catalogo.md 321 líneas",
+    "nota": "Ranking 6 criterios pendiente visita campo. Sin guía previa con ranking — hueco mercado."
+  },
+  "distritos": [
+    {
+      "nombre": "Yanahuara",
+      "coords": [
+        -16.3873,
+        -71.5421
+      ],
+      "rol": "Picanterías calles exteriores, Mirador sillar"
+    },
+    {
+      "nombre": "Cayma",
+      "coords": [
+        -16.3815,
+        -71.5455
+      ],
+      "rol": "Origen adobo ~1525, Villa 1963"
+    },
+    {
+      "nombre": "Sachaca",
+      "coords": [
+        -16.425,
+        -71.5661
+      ],
+      "rol": "Corazón loncco 8-12 Av Sachaca"
+    },
+    {
+      "nombre": "Tiabaya",
+      "coords": [
+        -16.4255,
+        -71.5627
+      ],
+      "rol": "Carretera rústica, casas sin cartel, más barato"
+    },
+    {
+      "nombre": "Uchumayo",
+      "coords": [
+        -16.41527,
+        -71.66361
+      ],
+      "rol": "Río Chili camarones, Tierra del Chimbango"
+    },
+    {
+      "nombre": "Sabandía",
+      "coords": [
+        -16.46694,
+        -71.5
+      ],
+      "rol": "Molino 1621, campiña sillar"
+    },
+    {
+      "nombre": "Characato",
+      "coords": [
+        -16.4934,
+        -71.49288
+      ],
+      "rol": "Origen characato, Ojo del Milagro, pulmón verde"
+    },
+    {
+      "nombre": "Paucarpata",
+      "coords": [
+        -16.42007,
+        -71.478
+      ],
+      "rol": "Andenes floridos, campiña este"
+    }
+  ],
+  "locales": [
+    {
+      "id": "Y1",
+      "nombre": "La Nueva Palomino",
+      "distrito": "Yanahuara",
+      "categoria": "picantería",
+      "categorias": [
+        "picantería"
+      ],
+      "direccion": "Calle León Velarde 317, Yanahuara",
+      "coords": [
+        -16.389,
+        -71.543
+      ],
+      "especialidad": "Rocoto relleno + pastel de papa, chupe camarones, adobo domingo",
+      "redes": {
+        "facebook": "laNuevaPalominoArequipa"
+      },
+      "fuente": "Wikipedia Picantería + Arequipa.net",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "Y2",
+      "nombre": "Sol de Mayo",
+      "distrito": "Yanahuara",
+      "categoria": "picantería",
+      "categorias": [
+        "picantería"
+      ],
+      "direccion": "Calle Tristán / Av La Marina, Yanahuara",
+      "coords": [
+        -16.395,
+        -71.542
+      ],
+      "especialidad": "Adobo arequipeño chicha guiñapo, chupe, rocoto",
+      "redes": {
+        "facebook": "SolDeMayoArequipa"
+      },
+      "fuente": "Wikipedia Adobo + Arequipa.net",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "Y3",
+      "nombre": "El Rocoto",
+      "distrito": "Yanahuara",
+      "categoria": "picantería",
+      "categorias": [
+        "picantería"
+      ],
+      "direccion": "Av Ejército / Calle Misti, Yanahuara",
+      "coords": [
+        -16.391,
+        -71.545
+      ],
+      "especialidad": "Rocoto relleno, pastel papa, costillar",
+      "redes": {
+        "facebook": "ElRocotoArequipa"
+      },
+      "fuente": "Arequipa.net + Wikipedia",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "Y4",
+      "nombre": "El Tío Darío",
+      "distrito": "Yanahuara",
+      "categoria": "picantería",
+      "categorias": [
+        "picantería",
+        "chicharronería",
+        "ruta-senca"
+      ],
+      "direccion": "Av Ejército 1005, Yanahuara",
+      "coords": [
+        -16.392,
+        -71.544
+      ],
+      "especialidad": "Chicharrón paila, cuy chactado, zarza sencca",
+      "redes": {
+        "facebook": "ElTioDarioArequipa"
+      },
+      "fuente": "Wikipedia Chicharrón + Anexo sencca",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "Y5",
+      "nombre": "Huarique Mirador Yanahuara",
+      "distrito": "Yanahuara",
+      "categoria": "huarique",
+      "categorias": [
+        "huarique",
+        "heladería"
+      ],
+      "direccion": "Mirador de Yanahuara, Plaza Yanahuara",
+      "coords": [
+        -16.387,
+        -71.542
+      ],
+      "especialidad": "Queso helado artesanal, buñuelos, wawas",
+      "redes": {
+        "facebook": "HeladeriaQuesoHeladoArequipa"
+      },
+      "fuente": "Wikipedia Queso helado",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "Y6",
+      "nombre": "Los Tambos Yanahuara",
+      "distrito": "Yanahuara",
+      "categoria": "chicharronería",
+      "categorias": [
+        "chicharronería",
+        "ruta-loncco",
+        "ruta-senca"
+      ],
+      "direccion": "Calle Tapia / León Velarde, Yanahuara",
+      "coords": [
+        -16.388,
+        -71.543
+      ],
+      "especialidad": "Chicharrón crocante, senca con chicharrón, chicha cuartillo",
+      "redes": {},
+      "fuente": "Wikipedia Loncco + Chicharrón",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "C1",
+      "nombre": "Tradición Arequipeña",
+      "distrito": "Cayma",
+      "categoria": "picantería",
+      "categorias": [
+        "picantería",
+        "ruta-loncco",
+        "ruta-adobo"
+      ],
+      "direccion": "Av Cayma / Trinidad Morán, Cayma",
+      "coords": [
+        -16.381,
+        -71.545
+      ],
+      "especialidad": "Adobo arequipeño origen 1525, chupe, pastel choclo, malaya",
+      "redes": {
+        "facebook": "TradicionArequipena"
+      },
+      "fuente": "Wikipedia Adobo Cayma 1525",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "C2",
+      "nombre": "La Caymeña",
+      "distrito": "Cayma",
+      "categoria": "picantería",
+      "categorias": [
+        "picantería"
+      ],
+      "direccion": "Calle Los Arces / Av Cayma, Cayma",
+      "coords": [
+        -16.382,
+        -71.548
+      ],
+      "especialidad": "Rocoto relleno, cuy chactado, chupe camarones, ocopa",
+      "redes": {
+        "facebook": "Picanteria-La-Caymeña"
+      },
+      "fuente": "Wikipedia Gastronomía",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "C3",
+      "nombre": "Los Compadres / El Montonero - Cayma",
+      "distrito": "Cayma",
+      "categoria": "chicharronería",
+      "categorias": [
+        "chicharronería",
+        "ruta-senca",
+        "ruta-loncco"
+      ],
+      "direccion": "Av Ejército / Av Cayma, Cayma",
+      "coords": [
+        -16.383,
+        -71.546
+      ],
+      "especialidad": "Chicharrón paila, zarza sencca, adobo desayuno",
+      "redes": {
+        "facebook": "ChicharroneriaCayma"
+      },
+      "fuente": "Wikipedia Chicharrón + Anexo",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "C4",
+      "nombre": "El Cacharpari - Cayma",
+      "distrito": "Cayma",
+      "categoria": "picantería",
+      "categorias": [
+        "picantería",
+        "ruta-senca"
+      ],
+      "direccion": "Urb La Tomilla / Carmen Alto, Cayma",
+      "coords": [
+        -16.376,
+        -71.542
+      ],
+      "especialidad": "Picante camarones, cauche queso, locro, zarza sencca",
+      "redes": {},
+      "fuente": "Wikipedia Gastronomía + Loncco",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "C5",
+      "nombre": "La Candelaria - Queso Helado Cayma",
+      "distrito": "Cayma",
+      "categoria": "heladería",
+      "categorias": [
+        "heladería"
+      ],
+      "direccion": "Plaza de Cayma, frente Iglesia San Miguel Arcángel",
+      "coords": [
+        -16.3815,
+        -71.5455
+      ],
+      "especialidad": "Queso helado artesanal",
+      "redes": {
+        "facebook": "HeladeriaQuesoHeladoArequipa"
+      },
+      "fuente": "Wikipedia Queso helado",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "C6",
+      "nombre": "Boulevard / Mercado Cayma",
+      "distrito": "Cayma",
+      "categoria": "huarique",
+      "categorias": [
+        "huarique"
+      ],
+      "direccion": "Boulevard de Cayma / Mercado central",
+      "coords": [
+        -16.38,
+        -71.544
+      ],
+      "especialidad": "Anticuchos, chicharrón, adobo pan tres puntas, zarza sencca",
+      "redes": {},
+      "fuente": "Arequipa.net método",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "S1",
+      "nombre": "La Lucila",
+      "distrito": "Sachaca",
+      "categoria": "picantería",
+      "categorias": [
+        "picantería",
+        "ruta-loncco"
+      ],
+      "direccion": "Av Fernandini 122, Sachaca",
+      "coords": [
+        -16.424,
+        -71.566
+      ],
+      "especialidad": "Chupe camarones, rocoto, cuy chactado, ocopa, adobo",
+      "redes": {
+        "facebook": "PicanteriaLaLucilaSachaca"
+      },
+      "fuente": "Arequipa.net Sachaca 8-12",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "S2",
+      "nombre": "La Capitana",
+      "distrito": "Sachaca",
+      "categoria": "picantería",
+      "categorias": [
+        "picantería",
+        "ruta-loncco"
+      ],
+      "direccion": "Av Sachaca 380, Sachaca",
+      "coords": [
+        -16.425,
+        -71.565
+      ],
+      "especialidad": "Costillar frito, chicharrón, chupe, rocoto, cauche",
+      "redes": {
+        "facebook": "PicanteriaLaCapitana"
+      },
+      "fuente": "Arequipa.net",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "S3",
+      "nombre": "La Cau Cau - Sachaca",
+      "distrito": "Sachaca",
+      "categoria": "picantería",
+      "categorias": [
+        "picantería",
+        "ruta-senca"
+      ],
+      "direccion": "Calle Tahuaycani, anexo Tahuaycani, Sachaca",
+      "coords": [
+        -16.426,
+        -71.568
+      ],
+      "especialidad": "Locro pecho, chaqué, cauche, zarza sencca",
+      "redes": {
+        "facebook": "PicanteriaLaCauCau"
+      },
+      "fuente": "Wikipedia Gastronomía + Anexo",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "S4",
+      "nombre": "Los Leños - Sachaca",
+      "distrito": "Sachaca",
+      "categoria": "picantería",
+      "categorias": [
+        "picantería",
+        "chicharronería",
+        "ruta-senca"
+      ],
+      "direccion": "Av Arancota, anexo Arancota, Sachaca",
+      "coords": [
+        -16.423,
+        -71.564
+      ],
+      "especialidad": "Chicharrón crocante, senca con chicharrón, chupe, adobo",
+      "redes": {
+        "facebook": "PicanteriaLosLeñosSachaca"
+      },
+      "fuente": "Wikipedia Chicharrón",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "S5",
+      "nombre": "Tío Grande - Sachaca",
+      "distrito": "Sachaca",
+      "categoria": "chicharronería",
+      "categorias": [
+        "chicharronería",
+        "ruta-loncco",
+        "ruta-senca"
+      ],
+      "direccion": "Pueblo Tradicional Tío Grande, Sachaca",
+      "coords": [
+        -16.422,
+        -71.567
+      ],
+      "especialidad": "Chicharrón cerdo paila, zarza sencca, costillar",
+      "redes": {},
+      "fuente": "Wikipedia Sachaca Tío Grande",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "S6",
+      "nombre": "Mirador de Sachaca",
+      "distrito": "Sachaca",
+      "categoria": "huarique",
+      "categorias": [
+        "huarique",
+        "heladería",
+        "ruta-loncco"
+      ],
+      "direccion": "Mirador de Sachaca, Av Fernandini s/n",
+      "coords": [
+        -16.425,
+        -71.5661
+      ],
+      "especialidad": "Queso helado, buñuelos, anticuchos, chicha cuartillo",
+      "redes": {
+        "facebook": "HeladeriaQuesoHeladoArequipa"
+      },
+      "fuente": "Wikipedia Sachaca Mirador",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "T1",
+      "nombre": "Los Perales - Tiabaya",
+      "distrito": "Tiabaya",
+      "categoria": "picantería",
+      "categorias": [
+        "picantería",
+        "ruta-loncco"
+      ],
+      "direccion": "Pueblo Los Perales, carretera Tiabaya",
+      "coords": [
+        -16.426,
+        -71.561
+      ],
+      "especialidad": "Menú olla familiar, rocoto, chupe, chicha cuartillo",
+      "redes": {
+        "facebook": "PicanteriaTiabaya"
+      },
+      "fuente": "Arequipa.net Tiabaya",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "T2",
+      "nombre": "Los Tunales - Tiabaya",
+      "distrito": "Tiabaya",
+      "categoria": "picantería",
+      "categorias": [
+        "picantería",
+        "ruta-senca"
+      ],
+      "direccion": "Pueblo Los Tunales, Tiabaya",
+      "coords": [
+        -16.428,
+        -71.56
+      ],
+      "especialidad": "Cuy chactado, ocopa, escribano, zarza sencca",
+      "redes": {
+        "facebook": "TiabayaPicanteria"
+      },
+      "fuente": "Wikipedia Tiabaya",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "T3",
+      "nombre": "Pampas Nuevas - Tiabaya",
+      "distrito": "Tiabaya",
+      "categoria": "picantería",
+      "categorias": [
+        "picantería",
+        "ruta-loncco"
+      ],
+      "direccion": "Pueblo Pampas Nuevas, Tiabaya",
+      "coords": [
+        -16.43,
+        -71.563
+      ],
+      "especialidad": "Adobo, caldo blanco, pebre, timpusca",
+      "redes": {},
+      "fuente": "Wikipedia Adobo",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "T4",
+      "nombre": "Carretera Tiabaya - Alata",
+      "distrito": "Tiabaya",
+      "categoria": "chicharronería",
+      "categorias": [
+        "chicharronería",
+        "ruta-senca"
+      ],
+      "direccion": "Carretera Tiabaya-Alata, anexo Alata",
+      "coords": [
+        -16.427,
+        -71.564
+      ],
+      "especialidad": "Chicharrón, senca con chicharrón, cauche",
+      "redes": {},
+      "fuente": "Wikipedia Chicharrón",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "T5",
+      "nombre": "Plaza San Santiago - Tiabaya",
+      "distrito": "Tiabaya",
+      "categoria": "huarique",
+      "categorias": [
+        "huarique",
+        "ruta-senca"
+      ],
+      "direccion": "Plaza de Tiabaya, frente Parroquia San Santiago",
+      "coords": [
+        -16.4255,
+        -71.5627
+      ],
+      "especialidad": "Anticuchos, zarza sencca, chicharrón, chicha",
+      "redes": {
+        "facebook": "TiabayaPicanteria"
+      },
+      "fuente": "Wikipedia Tiabaya + munitiabaya",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "T6",
+      "nombre": "Queso Helado Tiabaya",
+      "distrito": "Tiabaya",
+      "categoria": "heladería",
+      "categorias": [
+        "heladería"
+      ],
+      "direccion": "Plaza Tiabaya / Piscina Alto Valdivia",
+      "coords": [
+        -16.4255,
+        -71.562
+      ],
+      "especialidad": "Queso helado artesanal, buñuelos",
+      "redes": {
+        "facebook": "HeladeriaQuesoHeladoArequipa"
+      },
+      "fuente": "Wikipedia Queso helado",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "U1",
+      "nombre": "La Cauca - Congata",
+      "distrito": "Uchumayo",
+      "categoria": "picantería",
+      "categorias": [
+        "picantería",
+        "ruta-senca"
+      ],
+      "direccion": "Pueblo Tradicional Congata, Uchumayo",
+      "coords": [
+        -16.415,
+        -71.663
+      ],
+      "especialidad": "Chupe camarones Chili, picante camarones, zarza sencca",
+      "redes": {
+        "facebook": "PicanteriaLaCaucaUchumayo"
+      },
+      "fuente": "Wikipedia Uchumayo",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "U2",
+      "nombre": "El Chimbango - Uchumayo Pueblo",
+      "distrito": "Uchumayo",
+      "categoria": "picantería",
+      "categorias": [
+        "picantería",
+        "huarique"
+      ],
+      "direccion": "Av Arequipa s/n, Pueblo Uchumayo",
+      "coords": [
+        -16.416,
+        -71.664
+      ],
+      "especialidad": "Adobo, cuy chactado, ocopa, chimbango licor higo",
+      "redes": {
+        "facebook": "RestauranteElChimbangoUchumayo"
+      },
+      "fuente": "Wikipedia Uchumayo Tierra del Chimbango",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "U3",
+      "nombre": "Chicharronería Congata",
+      "distrito": "Uchumayo",
+      "categoria": "chicharronería",
+      "categorias": [
+        "chicharronería",
+        "ruta-senca",
+        "ruta-loncco"
+      ],
+      "direccion": "Carretera Congata-Uchumayo, Congata",
+      "coords": [
+        -16.414,
+        -71.662
+      ],
+      "especialidad": "Chicharrón paila, senca con chicharrón, costillar",
+      "redes": {
+        "facebook": "ChicharroneriaCongata"
+      },
+      "fuente": "Wikipedia Uchumayo",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "U4",
+      "nombre": "Quebrada Añashuayco - Sillar",
+      "distrito": "Uchumayo",
+      "categoria": "huarique",
+      "categorias": [
+        "huarique",
+        "ruta-loncco"
+      ],
+      "direccion": "Quebrada de Añashuayco, Uchumayo",
+      "coords": [
+        -16.41,
+        -71.67
+      ],
+      "especialidad": "Chicharrón paila, rocoto, solterito, zarza sencca",
+      "redes": {
+        "facebook": "CanterasAnashuaycoUchumayo"
+      },
+      "fuente": "Wikipedia Uchumayo Añashuayco",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "U5",
+      "nombre": "Puente Colonial Chili",
+      "distrito": "Uchumayo",
+      "categoria": "huarique",
+      "categorias": [
+        "huarique",
+        "ruta-senca"
+      ],
+      "direccion": "Puente colonial Uchumayo, río Chili",
+      "coords": [
+        -16.417,
+        -71.665
+      ],
+      "especialidad": "Chupe camarones río Chili, camarón fresco, escribano",
+      "redes": {},
+      "fuente": "Wikipedia Uchumayo",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "U6",
+      "nombre": "Queso Helado Uchumayo",
+      "distrito": "Uchumayo",
+      "categoria": "heladería",
+      "categorias": [
+        "heladería"
+      ],
+      "direccion": "Plaza Uchumayo / Festival Chimbango",
+      "coords": [
+        -16.41527,
+        -71.66361
+      ],
+      "especialidad": "Queso helado artesanal, buñuelos, chimbango dulce",
+      "redes": {
+        "facebook": "HeladeriaQuesoHeladoArequipa"
+      },
+      "fuente": "Wikipedia Queso helado",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "Sa1",
+      "nombre": "El Molino de Sabandía",
+      "distrito": "Sabandía",
+      "categoria": "picantería",
+      "categorias": [
+        "picantería",
+        "ruta-loncco"
+      ],
+      "direccion": "Molino de Sabandía, calle Molino s/n, Sabandía",
+      "coords": [
+        -16.467,
+        -71.5
+      ],
+      "especialidad": "Rocoto relleno, chupe camarones, cuy chactado, ocopa",
+      "redes": {
+        "facebook": "MolinoDeSabandiaOficial"
+      },
+      "fuente": "Wikipedia Sabandía Molino 1621 + peru.travel",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "Sa2",
+      "nombre": "Plaza Sabandía - Virgen Rosario",
+      "distrito": "Sabandía",
+      "categoria": "picantería",
+      "categorias": [
+        "picantería",
+        "ruta-senca"
+      ],
+      "direccion": "Plaza Sabandía, frente Parroquia Virgen Rosario",
+      "coords": [
+        -16.46694,
+        -71.5
+      ],
+      "especialidad": "Cuy chactado, locro, chaqué, cauche, zarza sencca",
+      "redes": {
+        "facebook": "PicanteriaSabandia"
+      },
+      "fuente": "Wikipedia Sabandía",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "Sa3",
+      "nombre": "Campiña Sabandía - Senca",
+      "distrito": "Sabandía",
+      "categoria": "chicharronería",
+      "categorias": [
+        "chicharronería",
+        "ruta-senca",
+        "ruta-loncco"
+      ],
+      "direccion": "Av Sabandía / calle La Isla, Sabandía",
+      "coords": [
+        -16.468,
+        -71.502
+      ],
+      "especialidad": "Chicharrón paila, senca con chicharrón, costillar",
+      "redes": {
+        "facebook": "ChicharroneriaSabandia"
+      },
+      "fuente": "Wikipedia Sabandía",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "Sa4",
+      "nombre": "Mirador Andenes Sabandía",
+      "distrito": "Sabandía",
+      "categoria": "huarique",
+      "categorias": [
+        "huarique",
+        "ruta-loncco"
+      ],
+      "direccion": "Mirador campiña Sabandía, andenes Sabandía-Characato",
+      "coords": [
+        -16.469,
+        -71.498
+      ],
+      "especialidad": "Anticuchos, chicharrón, rocoto, cauche, chicha cuartillo",
+      "redes": {},
+      "fuente": "Wikipedia Sabandía",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "Sa5",
+      "nombre": "Queso Helado Sabandía",
+      "distrito": "Sabandía",
+      "categoria": "heladería",
+      "categorias": [
+        "heladería"
+      ],
+      "direccion": "Molino de Sabandía / Plaza Sabandía",
+      "coords": [
+        -16.467,
+        -71.5
+      ],
+      "especialidad": "Queso helado artesanal, buñuelos",
+      "redes": {
+        "facebook": "HeladeriaQuesoHeladoArequipa"
+      },
+      "fuente": "Wikipedia Queso helado",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "Sa6",
+      "nombre": "La Campiña Sabandía-Characato",
+      "distrito": "Sabandía",
+      "categoria": "picantería",
+      "categorias": [
+        "picantería",
+        "ruta-senca",
+        "ruta-loncco"
+      ],
+      "direccion": "Carretera Sabandía-Characato, límite",
+      "coords": [
+        -16.47,
+        -71.505
+      ],
+      "especialidad": "Chupe viernes, timpusca sáb, caldo blanco/adobo dom, zarza sencca",
+      "redes": {
+        "facebook": "PicanteriaSabandiaCharacato"
+      },
+      "fuente": "Wikipedia Picantería menú día",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "Ch1",
+      "nombre": "La Benita de Characato",
+      "distrito": "Characato",
+      "categoria": "picantería",
+      "categorias": [
+        "picantería",
+        "ruta-senca",
+        "ruta-loncco"
+      ],
+      "direccion": "Plaza de Characato, frente Iglesia San Juan Bautista",
+      "coords": [
+        -16.4934,
+        -71.4929
+      ],
+      "especialidad": "Cuy chactado piedra, rocoto, chupe, cauche, zarza sencca",
+      "redes": {
+        "facebook": "LaBenitadeCharacato"
+      },
+      "fuente": "Wikipedia Characato + Cuy chactado",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "Ch2",
+      "nombre": "Characato Tradicional - Plaza",
+      "distrito": "Characato",
+      "categoria": "picantería",
+      "categorias": [
+        "picantería",
+        "ruta-loncco"
+      ],
+      "direccion": "Plaza Principal Characato",
+      "coords": [
+        -16.493,
+        -71.493
+      ],
+      "especialidad": "Rocoto, ocopa, escribano, solterito, menú día completo",
+      "redes": {
+        "facebook": "PicanteriaCharacato"
+      },
+      "fuente": "Wikipedia Characato",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "Ch3",
+      "nombre": "Ojo del Milagro - Characato",
+      "distrito": "Characato",
+      "categoria": "chicharronería",
+      "categorias": [
+        "chicharronería",
+        "ruta-senca",
+        "ruta-loncco"
+      ],
+      "direccion": "Vía Ojo del Milagro, Yanayaco/Mosopuquio",
+      "coords": [
+        -16.495,
+        -71.491
+      ],
+      "especialidad": "Chicharrón paila, senca con chicharrón, costillar",
+      "redes": {
+        "facebook": "ChicharroneriaCharacato"
+      },
+      "fuente": "Wikipedia Characato Ojo del Milagro",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "Ch4",
+      "nombre": "Mirador Characato - Andenes",
+      "distrito": "Characato",
+      "categoria": "huarique",
+      "categorias": [
+        "huarique",
+        "ruta-loncco"
+      ],
+      "direccion": "Mirador campiña Characato, andenes",
+      "coords": [
+        -16.494,
+        -71.495
+      ],
+      "especialidad": "Anticuchos, chicharrón, rocoto, cauche, chicha caporal",
+      "redes": {},
+      "fuente": "Wikipedia Characato",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "Ch5",
+      "nombre": "Queso Helado Characato",
+      "distrito": "Characato",
+      "categoria": "heladería",
+      "categorias": [
+        "heladería"
+      ],
+      "direccion": "Plaza Characato / Ojo del Milagro",
+      "coords": [
+        -16.4934,
+        -71.49288
+      ],
+      "especialidad": "Queso helado artesanal, buñuelos, wawas",
+      "redes": {
+        "facebook": "HeladeriaQuesoHeladoArequipa"
+      },
+      "fuente": "Wikipedia Queso helado",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "Ch6",
+      "nombre": "Buenavista / Cacapata - Characato",
+      "distrito": "Characato",
+      "categoria": "picantería",
+      "categorias": [
+        "picantería",
+        "ruta-senca"
+      ],
+      "direccion": "Pueblo Buenavista / Cacapata, Characato rural",
+      "coords": [
+        -16.497,
+        -71.49
+      ],
+      "especialidad": "Locro pecho, chaqué, cauche, zarza sencca",
+      "redes": {},
+      "fuente": "Wikipedia Characato Buenavista",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "P1",
+      "nombre": "Andenes Floridos - Paucarpata",
+      "distrito": "Paucarpata",
+      "categoria": "picantería",
+      "categorias": [
+        "picantería",
+        "ruta-senca",
+        "ruta-loncco"
+      ],
+      "direccion": "Av Los Alpes / Andenes Floridos, Paucarpata",
+      "coords": [
+        -16.42,
+        -71.478
+      ],
+      "especialidad": "Rocoto, chupe, cuy chactado, ocopa, zarza sencca",
+      "redes": {
+        "facebook": "PicanteriaPaucarpata"
+      },
+      "fuente": "Wikipedia Paucarpata Andenes floridos",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "P2",
+      "nombre": "La Paucarpatina - Plaza Santa Ana",
+      "distrito": "Paucarpata",
+      "categoria": "picantería",
+      "categorias": [
+        "picantería",
+        "ruta-loncco"
+      ],
+      "direccion": "Plaza Mayor Paucarpata, frente Iglesia Santa Ana",
+      "coords": [
+        -16.42007,
+        -71.478
+      ],
+      "especialidad": "Adobo, caldo blanco, pebre, timpusca",
+      "redes": {
+        "facebook": "LaPaucarpatina"
+      },
+      "fuente": "Wikipedia Paucarpata",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "P3",
+      "nombre": "Andenes Paucarpata - Senca",
+      "distrito": "Paucarpata",
+      "categoria": "chicharronería",
+      "categorias": [
+        "chicharronería",
+        "ruta-senca",
+        "ruta-loncco"
+      ],
+      "direccion": "Av Jesús / Andenes, Paucarpata Alta",
+      "coords": [
+        -16.422,
+        -71.476
+      ],
+      "especialidad": "Chicharrón paila, senca con chicharrón, costillar",
+      "redes": {},
+      "fuente": "Wikipedia Paucarpata",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "P4",
+      "nombre": "Mercado / Andamayo - Paucarpata",
+      "distrito": "Paucarpata",
+      "categoria": "huarique",
+      "categorias": [
+        "huarique",
+        "ruta-senca"
+      ],
+      "direccion": "Mercado Paucarpata / río Andamayo",
+      "coords": [
+        -16.419,
+        -71.479
+      ],
+      "especialidad": "Anticuchos, zarza sencca, rocoto, chupe",
+      "redes": {},
+      "fuente": "Wikipedia Paucarpata Andamayo",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "P5",
+      "nombre": "Queso Helado Paucarpata",
+      "distrito": "Paucarpata",
+      "categoria": "heladería",
+      "categorias": [
+        "heladería"
+      ],
+      "direccion": "Plaza Mayor Paucarpata / Av Los Alpes",
+      "coords": [
+        -16.42007,
+        -71.478
+      ],
+      "especialidad": "Queso helado artesanal, buñuelos",
+      "redes": {
+        "facebook": "HeladeriaQuesoHeladoArequipa"
+      },
+      "fuente": "Wikipedia Queso helado",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    },
+    {
+      "id": "P6",
+      "nombre": "Los Portales / Villa Santa Rosa",
+      "distrito": "Paucarpata",
+      "categoria": "picantería",
+      "categorias": [
+        "picantería",
+        "ruta-senca"
+      ],
+      "direccion": "Urb Los Portales / Villa Santa Rosa, Paucarpata Alta",
+      "coords": [
+        -16.425,
+        -71.475
+      ],
+      "especialidad": "Cuy chactado, locro, chaqué, cauche, zarza sencca",
+      "redes": {},
+      "fuente": "Wikipedia Paucarpata",
+      "ranking": {
+        "precio": null,
+        "platos": null,
+        "atencion": null,
+        "limpieza": null,
+        "infraestructura": null,
+        "decoracion": null,
+        "total": null,
+        "estado": "pendiente visita campo"
+      },
+      "horario": "12:00-15:00 hasta acabar ollas (dom adobo 05:30-10:30)",
+      "precioRef": "S/.25-40 pp picantería, S/.10-15 huarique"
+    }
+  ]
+}
