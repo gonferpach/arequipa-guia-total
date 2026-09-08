@@ -98,24 +98,28 @@ export default function RutaMap({ ruta, lang = "es" }) {
     let cancel = false;
     setEstado("cargando");
     setSegments([]);
-    fetch(`https://www.openstreetmap.org/api/0.6/relation/${osmId}/full.json`)
-      .then((r) => {
-        if (!r.ok) throw new Error(`OSM ${r.status}`);
-        return r.json();
-      })
-      .then((j) => {
+    const ids = (ruta.osm_ids && ruta.osm_ids.length ? ruta.osm_ids : []).slice(0, 4);
+    // Prueba los ids en orden (ida, vuelta...) hasta que uno dé geometría
+    (async () => {
+      for (const id of ids) {
         if (cancel) return;
-        const segs = osmToSegments(j);
-        if (segs.flat().length > 1) {
-          setSegments(segs);
-          setEstado("ok");
-        } else {
-          setEstado("fallback");
+        try {
+          const r = await fetch(`https://www.openstreetmap.org/api/0.6/relation/${id}/full.json`);
+          if (!r.ok) continue;
+          const j = await r.json();
+          const segs = osmToSegments(j);
+          if (segs.flat().length > 1) {
+            if (cancel) return;
+            setSegments(segs);
+            setEstado("ok");
+            return;
+          }
+        } catch {
+          /* intenta el siguiente id */
         }
-      })
-      .catch(() => {
-        if (!cancel) setEstado("fallback");
-      });
+      }
+      if (!cancel) setEstado("fallback");
+    })();
     return () => {
       cancel = true;
     };
