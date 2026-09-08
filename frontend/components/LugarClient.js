@@ -133,9 +133,7 @@ export default function LugarClient({ id, lang = "es" }) {
           </div>
           <div className="flex flex-wrap gap-2 shrink-0">
             <a
-              href={`https://wa.me/51939316437?text=${encodeURIComponent(es ? `Hola, quiero RECLAMAR esta ficha de la guia: ${place.title}` : `Hi, I want to CLAIM this guide listing: ${place.title}`)}`}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/admin"
               className="px-4 py-2 rounded-lg bg-green-600 hover:bg-green-500 text-white font-semibold text-sm whitespace-nowrap"
             >
               {es ? "Reclamar mi negocio" : "Claim my business"}
