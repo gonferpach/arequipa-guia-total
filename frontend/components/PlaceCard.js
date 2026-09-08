@@ -72,19 +72,30 @@ export default function PlaceCard({ place, lang = "es", detailHref = null }) {
   );
 
   const foot = (
-    <div className="px-5 py-3 bg-stone-50 border-t border-stone-100 text-xs flex justify-between items-center mt-4">
-      <span className="font-semibold text-amber-700">{href ? (es ? "Ver ficha" : "View listing") : place.district}</span>
-      {place.latitude && place.longitude && (
-        <a
-          href={`https://maps.google.com/?q=${place.latitude},${place.longitude}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-stone-500 underline hover:text-stone-700"
-          onClick={(e) => e.stopPropagation()}
-        >
-          {es ? "Cómo llegar" : "Directions"}
-        </a>
-      )}
+    <div className="px-5 py-3 bg-stone-50 border-t border-stone-100 text-xs flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
+      <div className="flex items-center gap-2">
+        <span className="font-semibold text-amber-700">{href ? (es ? "Ver ficha" : "View listing") : place.district}</span>
+        {place.latitude && place.longitude && (
+          <a
+            href={`https://maps.google.com/?q=${place.latitude},${place.longitude}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-stone-500 underline hover:text-stone-700"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {es ? "Cómo llegar" : "Directions"}
+          </a>
+        )}
+      </div>
+      <a
+        href={`https://wa.me/51939316437?text=${encodeURIComponent(es ? `Hola, quiero RECLAMAR esta ficha de la guia: ${place.title}` : `Hi, I want to CLAIM this guide listing: ${place.title}`)}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="px-3 py-1 rounded-lg bg-green-600 hover:bg-green-500 text-white font-semibold text-xs whitespace-nowrap"
+        onClick={(e) => e.stopPropagation()}
+      >
+        {es ? "Reclamar" : "Claim"}
+      </a>
     </div>
   );
 
