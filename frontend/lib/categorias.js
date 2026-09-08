@@ -79,9 +79,58 @@ const DISTRITOS_CONOCIDOS = [
   "Paucarpata",
 ];
 
-export function distritoFromAddress(address) {
+// Centroides aprox. de distritos de Arequipa para asignar distrito por coordenadas
+const DISTRITO_CENTROID = {
+  "Arequipa": [-16.3988, -71.5369], // Cercado
+  "Cayma": [-16.3895, -71.5490],
+  "Yanahuara": [-16.3840, -71.5420],
+  "Alto Selva Alegre": [-16.3660, -71.5270],
+  "Cerro Colorado": [-16.4120, -71.5740],
+  "Mariano Melgar": [-16.4050, -71.5100],
+  "Miraflores": [-16.4250, -71.5220],
+  "Jose Luis Bustamante y Rivero": [-16.4330, -71.5220],
+  "Paucarpata": [-16.4250, -71.4920],
+  "Jacobo Hunter": [-16.4520, -71.5450],
+  "Sachaca": [-16.4400, -71.5620],
+  "Tiabaya": [-16.4580, -71.5940],
+  "Socabaya": [-16.4620, -71.5220],
+  "Characato": [-16.4330, -71.4700],
+  "Sabandia": [-16.4520, -71.4920],
+  "Sabandía": [-16.4520, -71.4920],
+  "Yura": [-16.2500, -71.6800],
+  "Uchumayo": [-16.4260, -71.6800],
+};
+
+function haversineKm(lat1, lon1, lat2, lon2) {
+  const R = 6371;
+  const toRad = (d) => (d * Math.PI) / 180;
+  const dLat = toRad(lat2 - lat1);
+  const dLon = toRad(lon2 - lon1);
+  const a =
+    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+    Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLon / 2) * Math.sin(dLon / 2);
+  return 2 * R * Math.asin(Math.sqrt(a));
+}
+
+// Devuelve el distrito mas cercano a una coordenada (para afinar la direccion generica)
+export function distritoFromCoords(lat, lon) {
+  if (!Number.isFinite(Number(lat)) || !Number.isFinite(Number(lon))) return null;
+  let mejor = null;
+  let mejorDist = Infinity;
+  for (const [nombre, [clat, clon]] of Object.entries(DISTRITO_CENTROID)) {
+    if (nombre === "Sabandia") continue; // variante, solo usamos la acentuada
+    const d = haversineKm(Number(lat), Number(lon), clat, clon);
+    if (d < mejorDist) {
+      mejorDist = d;
+      mejor = nombre;
+    }
+  }
+  return mejorDist < 12 ? mejor : null; // fuera del area metropolitana: mejor Arequipa
+}
+
+export function distritoFromAddress(address, lat, lon) {
   const a = (address || "").replace(/,?\s*Perú\.?$/i, "").trim();
-  if (!a) return "Arequipa";
+  if (!a) return distritoFromCoords(lat, lon) || "Arequipa";
   const norm = a.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
   for (const d of DISTRITOS_CONOCIDOS) {
     const dn = d.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
@@ -90,9 +139,10 @@ export function distritoFromAddress(address) {
   const parts = a.split(",").map((s) => s.trim()).filter(Boolean);
   if (parts.length >= 2) {
     const cand = parts[parts.length - 1].replace(/\b0?400?\d{2}\b/g, "").trim();
-    if (cand && cand.length <= 40) return cand;
+    if (cand && cand.length <= 40 && cand !== "Arequipa") return cand;
   }
-  return "Arequipa";
+  // Direccion generica → afinar por coordenadas
+  return distritoFromCoords(lat, lon) || "Arequipa";
 }
 
 export function hasParking(place) {
@@ -114,7 +164,7 @@ export function normalizeGoogle(row) {
     title: row.title,
     category: row.category,
     address: row.address || "",
-    district: distritoFromAddress(row.address),
+    district: distritoFromAddress(row.address, row.latitude, row.longitude),
     phone: row.phone || "",
     website: row.website || "",
     rating: row.rating ?? null,

@@ -115,20 +115,40 @@ export default function LugarClient({ id, lang = "es" }) {
         <div className="mt-6">
           <CategoryMap places={[place]} height={340} />
         </div>
-        <div className="mt-8 bg-amber-50 border border-amber-200 rounded-2xl p-5 text-sm text-amber-900 flex flex-wrap items-center justify-between gap-3">
-          <span>
-            {es
-              ? `Este es tu negocio? Reclama esta ficha y agrega fotos, carta y reservas.`
-              : `Is this your business? Claim this listing and add photos, menu and bookings.`}
-          </span>
-          <a
-            href={movil ? `https://wa.me/${movil}?text=${waText}` : es ? "/admin" : "/admin"}
-            target={movil ? "_blank" : undefined}
-            rel={movil ? "noopener noreferrer" : undefined}
-            className="px-4 py-2 rounded-lg bg-amber-600 hover:bg-amber-500 text-white font-semibold text-sm whitespace-nowrap"
-          >
-            {es ? "Reclamar ficha" : "Claim listing"}
-          </a>
+        <div className="mt-8 bg-amber-50 border border-amber-200 rounded-2xl p-5 text-sm text-amber-900 flex flex-col sm:flex-row flex-wrap items-center justify-between gap-3">
+          <div>
+            <span className="font-semibold">
+              {es ? "Es tu negocio?" : "Is this your business?"}
+            </span>{" "}
+            <span>
+              {es
+                ? "Reclama la ficha y edita fotos, carta, horarios y reservas."
+                : "Claim the listing to edit photos, menu, hours and bookings."}
+            </span>
+            <div className="text-xs text-amber-700 mt-1">
+              {es
+                ? "Te atendemos por WhatsApp para verificar y publicar los cambios."
+                : "We handle verification and publishing by WhatsApp."}
+            </div>
+          </div>
+          <div className="flex flex-wrap gap-2 shrink-0">
+            <a
+              href={`https://wa.me/51939316437?text=${encodeURIComponent(es ? `Hola, quiero RECLAMAR esta ficha de la guia: ${place.title}` : `Hi, I want to CLAIM this guide listing: ${place.title}`)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 rounded-lg bg-green-600 hover:bg-green-500 text-white font-semibold text-sm whitespace-nowrap"
+            >
+              {es ? "Reclamar mi negocio" : "Claim my business"}
+            </a>
+            <a
+              href={`https://wa.me/51939316437?text=${encodeURIComponent(es ? `Hola, quiero EDITAR la informacion de: ${place.title}` : `Hi, I want to EDIT info for: ${place.title}`)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 rounded-lg bg-white border border-amber-600 text-amber-800 hover:bg-amber-100 font-semibold text-sm whitespace-nowrap"
+            >
+              {es ? "Editar informacion" : "Edit information"}
+            </a>
+          </div>
         </div>
       </section>
     </div>
