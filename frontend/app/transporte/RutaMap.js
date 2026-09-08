@@ -28,49 +28,76 @@ function FitBounds({ coords }) {
   return null;
 }
 
-// Parsea OSM relation full.json -> array de [lat, lon]
-function osmToCoords(json) {
+// Parsea OSM relation full.json -> segmentos ordenados [[lat,lon],...]
+// Sigue el orden de members de la relación y orienta cada way;
+// si un tramo no conecta con el anterior, corta y empieza otro segmento
+// (así jamás salen líneas cruzando el mapa).
+function osmToSegments(json) {
   if (!json || !Array.isArray(json.elements)) return [];
   const nodes = new Map();
+  const ways = new Map();
+  let members = null;
   for (const el of json.elements) {
     if (el.type === "node" && typeof el.lat === "number") {
       nodes.set(el.id, [el.lat, el.lon]);
+    } else if (el.type === "way" && Array.isArray(el.nodes)) {
+      ways.set(el.id, el.nodes);
+    } else if (el.type === "relation" && Array.isArray(el.members) && !members) {
+      members = el.members;
     }
   }
-  const line = [];
-  for (const el of json.elements) {
-    if (el.type === "way" && Array.isArray(el.nodes)) {
-      for (const nid of el.nodes) {
-        const c = nodes.get(nid);
-        if (c) {
-          const last = line[line.length - 1];
-          if (!last || last[0] !== c[0] || last[1] !== c[1]) line.push(c);
-        }
+  const wayOrder = members
+    ? members.filter((m) => m.type === "way").map((m) => m.ref)
+    : [...ways.keys()];
+  const segments = [];
+  let current = [];
+  const key = (c) => c[0].toFixed(6) + "," + c[1].toFixed(6);
+  for (const wid of wayOrder) {
+    const nodeIds = ways.get(wid);
+    if (!nodeIds || nodeIds.length < 2) continue;
+    let pts = nodeIds.map((id) => nodes.get(id)).filter(Boolean);
+    if (pts.length < 2) continue;
+    if (current.length) {
+      const end = key(current[current.length - 1]);
+      if (key(pts[0]) === end) {
+        pts = pts.slice(1);
+      } else if (key(pts[pts.length - 1]) === end) {
+        pts = pts.slice(0, -1).reverse();
+      } else {
+        if (current.length > 1) segments.push(current);
+        current = [];
       }
     }
+    for (const p of pts) {
+      const last = current[current.length - 1];
+      if (!last || key(last) !== key(p)) current.push(p);
+    }
   }
-  return line;
+  if (current.length > 1) segments.push(current);
+  return segments;
 }
 
 export default function RutaMap({ ruta, lang = "es" }) {
-  const [coords, setCoords] = useState([]);
+  const [segments, setSegments] = useState([]);
   const [estado, setEstado] = useState("idle"); // idle | cargando | ok | fallback | error
+
+  const coords = segments.flat();
 
   useEffect(() => {
     if (!ruta) {
-      setCoords([]);
+      setSegments([]);
       setEstado("idle");
       return;
     }
     const osmId = ruta.osm_ids && ruta.osm_ids[0];
     if (!osmId) {
-      setCoords([]);
+      setSegments([]);
       setEstado("fallback");
       return;
     }
     let cancel = false;
     setEstado("cargando");
-    setCoords([]);
+    setSegments([]);
     fetch(`https://www.openstreetmap.org/api/0.6/relation/${osmId}/full.json`)
       .then((r) => {
         if (!r.ok) throw new Error(`OSM ${r.status}`);
@@ -78,9 +105,9 @@ export default function RutaMap({ ruta, lang = "es" }) {
       })
       .then((j) => {
         if (cancel) return;
-        const line = osmToCoords(j);
-        if (line.length > 1) {
-          setCoords(line);
+        const segs = osmToSegments(j);
+        if (segs.flat().length > 1) {
+          setSegments(segs);
           setEstado("ok");
         } else {
           setEstado("fallback");
@@ -126,9 +153,10 @@ export default function RutaMap({ ruta, lang = "es" }) {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
         <FitBounds coords={coords} />
-        {coords.length > 1 && (
-          <Polyline positions={coords} pathOptions={{ color, weight: 5, opacity: 0.85 }} />
-        )}
+        {segments.length > 0 &&
+          segments.map((seg, i) => (
+            <Polyline key={i} positions={seg} pathOptions={{ color, weight: 5, opacity: 0.85 }} />
+          ))}
         {inicio && (
           <Marker position={inicio}>
             <Popup>{lang === "es" ? "Origen" : "Origin"}: {ruta.origen}</Popup>
