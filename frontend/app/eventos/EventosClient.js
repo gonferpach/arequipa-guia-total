@@ -1,12 +1,12 @@
 import data from "../../data/eventos.json";
 
 const TIPOS = {
-  "feria-artesanal": { es: "Feria artesanal", en: "Artisan fair", icon: "🧶" },
-  "tour-gastronomico": { es: "Tour gastronómico", en: "Food tour", icon: "🍲" },
-  mercado: { es: "Mercado", en: "Market", icon: "🧺" },
-  festividad: { es: "Festividad", en: "Festivity", icon: "🎉" },
-  "festival-gastronomico": { es: "Festival gastronómico", en: "Food festival", icon: "🥘" },
-  "aniversario-distrital": { es: "Aniversario distrital", en: "District anniversary", icon: "🎈" },
+  "feria-artesanal": { es: "Feria artesanal", en: "Artisan fair", icon: "" },
+  "tour-gastronomico": { es: "Tour gastronómico", en: "Food tour", icon: "" },
+  mercado: { es: "Mercado", en: "Market", icon: "" },
+  festividad: { es: "Festividad", en: "Festivity", icon: "" },
+  "festival-gastronomico": { es: "Festival gastronómico", en: "Food festival", icon: "" },
+  "aniversario-distrital": { es: "Aniversario distrital", en: "District anniversary", icon: "" },
 };
 
 export default function EventosClient({ lang = "es" }) {
@@ -20,7 +20,7 @@ export default function EventosClient({ lang = "es" }) {
         lugar: "Lugar",
         gratis: "Gratis",
         repiteAnual: "Se repite cada año",
-        hint: "Pregúntale al bot de la guía por horarios, lugares y qué hacer 🦞",
+        hint: "Pregúntale al bot de la guía por horarios, lugares y qué hacer ",
         nota: "Horarios y precios con ~ son aproximados. Los eventos recurrentes (ferias y tours) operan todo el año salvo anuncios oficiales.",
       }
     : {
@@ -31,12 +31,12 @@ export default function EventosClient({ lang = "es" }) {
         lugar: "Where",
         gratis: "Free",
         repiteAnual: "Happens every year",
-        hint: "Ask the guide's bot about schedules, places and what to do 🦞",
+        hint: "Ask the guide's bot about schedules, places and what to do ",
         nota: "Schedules and prices marked with ~ are approximate. Recurring events (fairs and tours) run year-round unless officially cancelled.",
       };
 
   const tipoLabel = (tipo) => TIPOS[tipo]?.[lang] || tipo;
-  const tipoIcon = (tipo) => TIPOS[tipo]?.icon || "📅";
+  const tipoIcon = (tipo) => TIPOS[tipo]?.icon || "";
   const fechaLabel = (f) => (typeof f === "string" ? f : f?.[lang] || f?.es || "");
 
   return (
@@ -56,7 +56,7 @@ export default function EventosClient({ lang = "es" }) {
           <div className="mt-6 flex flex-wrap gap-2 justify-center text-xs">
             <span className="px-2 py-1 rounded-full border border-white/40 bg-white/10">3 {es ? "recurrentes" : "recurring"}</span>
             <span className="px-2 py-1 rounded-full border border-white/40 bg-white/10">3 {es ? "anuales" : "annual"}</span>
-            <span className="px-2 py-1 rounded-full border border-amber-300/60 bg-amber-400/20 font-semibold">🤖 Bot IA</span>
+            <span className="px-2 py-1 rounded-full border border-amber-300/60 bg-amber-400/20 font-semibold"> Bot IA</span>
           </div>
         </div>
       </section>
@@ -74,9 +74,9 @@ export default function EventosClient({ lang = "es" }) {
                   <span className="text-xs px-2 py-1 rounded-full border border-orange-300 bg-orange-50 text-orange-800">{tipoLabel(ev.tipo)}</span>
                 </div>
                 <h3 className="font-bold text-lg mt-3 text-stone-900">{ev.nombre}</h3>
-                <p className="mt-2 text-sm font-semibold text-orange-700">🗓 {ev.cuando?.[lang] || ev.cuando?.es}</p>
-                <p className="text-xs text-gray-500 mt-1">📍 {ev.lugar}</p>
-                <p className="text-xs text-gray-500">💰 {ev.precio?.[lang] || ev.precio?.es}</p>
+                <p className="mt-2 text-sm font-semibold text-orange-700"> {ev.cuando?.[lang] || ev.cuando?.es}</p>
+                <p className="text-xs text-gray-500 mt-1"> {ev.lugar}</p>
+                <p className="text-xs text-gray-500"> {ev.precio?.[lang] || ev.precio?.es}</p>
                 <p className="text-sm text-gray-700 mt-3">{ev.descripcion?.[lang] || ev.descripcion?.es}</p>
               </div>
             </article>
@@ -97,8 +97,8 @@ export default function EventosClient({ lang = "es" }) {
                   <span className="text-xs px-2 py-1 rounded-full border border-stone-300 bg-white text-stone-700">{tipoLabel(ev.tipo)}</span>
                 </div>
                 <h3 className="font-bold text-lg mt-3 text-stone-900">{ev.nombre}</h3>
-                <p className="mt-2 text-sm font-semibold text-orange-700">🗓 {fechaLabel(ev.fecha)}</p>
-                <p className="text-xs text-gray-500 mt-0.5">🔁 {t.repiteAnual}</p>
+                <p className="mt-2 text-sm font-semibold text-orange-700"> {fechaLabel(ev.fecha)}</p>
+                <p className="text-xs text-gray-500 mt-0.5"> {t.repiteAnual}</p>
                 <p className="text-sm text-gray-700 mt-3">{ev.descripcion?.[lang] || ev.descripcion?.es}</p>
               </div>
             </article>

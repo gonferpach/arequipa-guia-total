@@ -1,4 +1,4 @@
-// Proxy API gastronomía → backend 4005 (same-origin, sin CORS para el browser)
+// Proxy API gastronomía  backend 4005 (same-origin, sin CORS para el browser)
 const API =
   process.env.BACKEND_INTERNAL_URL ||
   process.env.NEXT_PUBLIC_API_URL ||
@@ -12,7 +12,7 @@ const clientIp = (req) => {
   return null;
 };
 
-// GET /api/gastro/votos → summary de todos los locales
+// GET /api/gastro/votos  summary de todos los locales
 export async function GET() {
   try {
     const r = await fetch(`${API}/api/gastronomia/summary`, { cache: "no-store" });
@@ -23,7 +23,7 @@ export async function GET() {
   }
 }
 
-// POST /api/gastro/votos { localId, scores, comentario } → crea voto
+// POST /api/gastro/votos { localId, scores, comentario }  crea voto
 export async function POST(request) {
   try {
     const body = await request.json();

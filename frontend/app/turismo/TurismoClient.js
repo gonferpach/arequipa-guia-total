@@ -9,11 +9,11 @@ const CRIT_EN = data.meta.criteriosVoto.en;
 
 const T = {
   es: {
-    buscar: "🔍 Buscar sitio, zona… (ej: mirador, Santa Catalina, Misti)",
+    buscar: " Buscar sitio, zona… (ej: mirador, Santa Catalina, Misti)",
     todasZonas: "Todas las zonas",
     todasCats: "Todas las categorías",
     de: "de",
-    calificar: "★ Calificar este sitio",
+    calificar: " Calificar este sitio",
     porCalificar: "por calificar",
     usuarios: "voto{v}",
     tuExperiencia: "Tu experiencia — toca las estrellas (1-5 cada criterio):",
@@ -23,23 +23,23 @@ const T = {
     comentariosRec: "Comentarios recientes:",
     cancelar: "Cancelar",
     enviando: "Enviando…",
-    enviar: "📤 Enviar calificación",
+    enviar: " Enviar calificación",
     calificaLos: "Califica los 5 criterios para enviar",
     notaSpam: "1 voto por sitio al día por IP · anónimo · sin login (fase 1)",
     sinResultados: "Sin resultados para «{q}». Prueba: mirador, Santa Catalina, sillar, Misti, termales…",
-    gracias: "¡Gracias! Tu calificación se guardó 🦞",
+    gracias: "¡Gracias! Tu calificación se guardó ",
     errorRed: "Error de red. Intenta de nuevo.",
     errorGuardar: "Error al guardar",
-    mapa: "📍 mapa",
-    hintChat: "¿Dudas? Pregúntale al bot de la guía 🦞 — responde con los datos de esta guía",
+    mapa: " mapa",
+    hintChat: "¿Dudas? Pregúntale al bot de la guía  — responde con los datos de esta guía",
     votaron: "usuarios",
   },
   en: {
-    buscar: "🔍 Search place, area… (e.g.: viewpoint, Santa Catalina, Misti)",
+    buscar: " Search place, area… (e.g.: viewpoint, Santa Catalina, Misti)",
     todasZonas: "All areas",
     todasCats: "All categories",
     de: "of",
-    calificar: "★ Rate this place",
+    calificar: " Rate this place",
     porCalificar: "unrated",
     usuarios: "vote{v}",
     tuExperiencia: "Your experience — tap the stars (1-5 each criterion):",
@@ -49,15 +49,15 @@ const T = {
     comentariosRec: "Recent comments:",
     cancelar: "Cancel",
     enviando: "Sending…",
-    enviar: "📤 Send rating",
+    enviar: " Send rating",
     calificaLos: "Rate all 5 criteria to send",
     notaSpam: "1 vote per place per day per IP · anonymous · no login (phase 1)",
     sinResultados: "No results for «{q}». Try: viewpoint, Santa Catalina, sillar, Misti, hot springs…",
-    gracias: "Thanks! Your rating was saved 🦞",
+    gracias: "Thanks! Your rating was saved ",
     errorRed: "Network error. Try again.",
     errorGuardar: "Error saving",
-    mapa: "📍 map",
-    hintChat: "Questions? Ask the guide's bot 🦞 — it answers with this guide's data",
+    mapa: " map",
+    hintChat: "Questions? Ask the guide's bot  — it answers with this guide's data",
     votaron: "users",
   },
 };
@@ -93,7 +93,7 @@ function RankingBars({ summary, labels, t }) {
       })}
       {useUser && (
         <p className="text-xs text-teal-700 font-medium">
-          ★ {summary.totalGeneral}/5 ({summary.total} {t.usuarios.replace("{v}", summary.total !== 1 ? "s" : "")})
+           {summary.totalGeneral}/5 ({summary.total} {t.usuarios.replace("{v}", summary.total !== 1 ? "s" : "")})
         </p>
       )}
     </div>
@@ -112,7 +112,7 @@ function StarRow({ label, value, onChange }) {
             onClick={() => onChange(n)}
             className={`text-2xl leading-none transition ${n <= value ? "text-amber-500" : "text-stone-300 hover:text-amber-300"}`}
             aria-label={`${label} ${n}`}
-          >★</button>
+          ></button>
         ))}
       </div>
       <span className="text-xs text-stone-500 w-8">{value ? `${value}/5` : "—"}</span>
@@ -217,7 +217,7 @@ export default function TurismoClient({ lang = "es" }) {
             <Badge color="stone">7 {lang === "es" ? "zonas" : "areas"}</Badge>
             <Badge color="unesco">UNESCO 2000</Badge>
             <Badge color="amber">ES · EN</Badge>
-            <Badge color="teal">🤖 Bot IA</Badge>
+            <Badge color="teal"> Bot IA</Badge>
           </div>
         </div>
       </section>
@@ -259,7 +259,7 @@ export default function TurismoClient({ lang = "es" }) {
                   <h3 className="font-bold text-lg mt-3 text-stone-900">{s.nombre}</h3>
                   <p className="text-sm text-gray-700 mt-2">{s.descripcion[lang] || s.descripcion.es}</p>
                   <p className="text-xs text-gray-500 mt-3">
-                    📍 {s.direccion} ·{" "}
+                     {s.direccion} ·{" "}
                     <a
                       href={`https://maps.google.com/?q=${s.coords?.lat},${s.coords?.lng}`}
                       target="_blank"
@@ -268,7 +268,7 @@ export default function TurismoClient({ lang = "es" }) {
                     >{t.mapa}</a>
                   </p>
                   <p className="text-xs text-gray-500 mt-1">
-                    🕒 {s.horario?.[lang] || s.horario?.es} · 💰 {s.precioRef?.[lang] || s.precioRef?.es}
+                     {s.horario?.[lang] || s.horario?.es} ·  {s.precioRef?.[lang] || s.precioRef?.es}
                   </p>
                   <RankingBars summary={summary} labels={critLabels} t={t} />
                   {summary?.comentarios?.length > 0 && (
@@ -280,7 +280,7 @@ export default function TurismoClient({ lang = "es" }) {
                 </div>
                 <div className="px-4 py-2 bg-teal-50 border-t border-teal-100 text-xs text-teal-700 flex justify-between items-center">
                   <button onClick={() => openModal(s)} className="font-semibold hover:text-teal-800">{t.calificar}</button>
-                  <span className="text-stone-500">{summary?.total > 0 ? `★ ${summary.totalGeneral}/5` : "—"}</span>
+                  <span className="text-stone-500">{summary?.total > 0 ? ` ${summary.totalGeneral}/5` : "—"}</span>
                 </div>
               </article>
             );
@@ -301,7 +301,7 @@ export default function TurismoClient({ lang = "es" }) {
                 <h3 className="font-bold text-lg text-stone-900">{selected.nombre}</h3>
                 <p className="text-xs text-stone-500">{catLabel(selected.categoria)} · {zonaLabel(selected.zona)}</p>
                 {summaries[selected.id]?.total > 0 && (
-                  <p className="text-xs text-teal-700 mt-1">★ {summaries[selected.id].totalGeneral}/5 ({summaries[selected.id].total} {t.votaron})</p>
+                  <p className="text-xs text-teal-700 mt-1"> {summaries[selected.id].totalGeneral}/5 ({summaries[selected.id].total} {t.votaron})</p>
                 )}
               </div>
               <button onClick={() => !sending && setSelected(null)} className="text-stone-400 hover:text-stone-700 text-2xl leading-none px-2">×</button>

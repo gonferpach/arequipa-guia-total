@@ -1,4 +1,4 @@
-// Proxy directorios (votos multi-colección) → backend 4005 (same-origin, sin CORS)
+// Proxy directorios (votos multi-colección)  backend 4005 (same-origin, sin CORS)
 // GET  /api/directorios/sitios/summary
 // POST /api/directorios/sitios/<id>/voto
 const API =

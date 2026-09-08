@@ -1,4 +1,4 @@
-// Proxy API neoguia → backend 3002 (lugares de OpenStreetMap)
+// Proxy API neoguia  backend 3002 (lugares de OpenStreetMap)
 const API = process.env.NEOGUIA_URL || "http://localhost:3002";
 
 export async function GET(request, { params }) {

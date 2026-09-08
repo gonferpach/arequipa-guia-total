@@ -1,4 +1,4 @@
-// Proxy chat de la guía → backend 4005 (same-origin, sin CORS)
+// Proxy chat de la guía  backend 4005 (same-origin, sin CORS)
 const API =
   process.env.BACKEND_INTERNAL_URL ||
   process.env.NEXT_PUBLIC_API_URL ||
@@ -23,6 +23,6 @@ export async function POST(request) {
     const data = await r.json().catch(() => ({}));
     return Response.json(data, { status: r.status });
   } catch {
-    return Response.json({ error: "El asistente no está disponible 🦞" }, { status: 502 });
+    return Response.json({ error: "El asistente no está disponible " }, { status: 502 });
   }
 }

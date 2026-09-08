@@ -119,7 +119,7 @@ export default function AdminPage() {
       if (!res.ok) throw new Error(data.error || "Error del servidor");
       setStatus({
         ok: true,
-        msg: `✅ Landing creada con plantilla: ${data.template.template}`,
+        msg: ` Landing creada con plantilla: ${data.template.template}`,
         slug: data.slug,
         palette: data.palette,
         seo: data.seo,
@@ -127,7 +127,7 @@ export default function AdminPage() {
       setLastSlug(data.slug);
       setForm(emptyForm);
     } catch (err) {
-      setStatus({ ok: false, msg: `❌ ${err.message}` });
+      setStatus({ ok: false, msg: ` ${err.message}` });
     } finally {
       setLoading(false);
     }
@@ -140,7 +140,7 @@ export default function AdminPage() {
   return (
     <main className="min-h-screen py-12 px-4">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-3xl font-bold mb-2">Crear landing 🚀</h1>
+        <h1 className="text-3xl font-bold mb-2">Crear landing </h1>
         <p className="text-gray-400 mb-8">
           Completa los datos de tu negocio. La IA (RAG) elegirá la mejor plantilla,
           extrae tu paleta y genera el SEO.
@@ -163,7 +163,7 @@ export default function AdminPage() {
                   target="_blank"
                   className="underline font-semibold"
                 >
-                  Ver mi landing →
+                  Ver mi landing 
                 </a>
               </>
             )}
@@ -171,7 +171,7 @@ export default function AdminPage() {
             {/* Palette preview */}
             {status.ok && status.palette && (
               <div className="mt-4">
-                <p className="text-sm font-semibold mb-2">🎨 Paleta extraída</p>
+                <p className="text-sm font-semibold mb-2"> Paleta extraída</p>
                 <div className="flex gap-2">
                   {["primary", "secondary", "accent"].map((k) => (
                     <div key={k} className="text-center">
@@ -194,7 +194,7 @@ export default function AdminPage() {
             {/* SEO preview */}
             {status.ok && status.seo && (
               <div className="mt-4 p-3 rounded-lg bg-gray-900/70 border border-gray-700">
-                <p className="text-sm font-semibold mb-1">🔍 SEO generado</p>
+                <p className="text-sm font-semibold mb-1"> SEO generado</p>
                 <p className="text-blue-400 text-sm font-medium">{status.seo.title}</p>
                 <p className="text-gray-400 text-xs">{status.seo.description}</p>
                 <p className="text-[10px] text-gray-500 mt-1">
@@ -212,13 +212,13 @@ export default function AdminPage() {
                   disabled={deploy?.loading}
                   className="px-4 py-2 rounded-lg bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-400 hover:to-emerald-500 text-gray-950 font-bold text-sm disabled:opacity-50 transition"
                 >
-                  {deploy?.loading ? "🚀 Publicando..." : "🚀 Publicar con OpenShip"}
+                  {deploy?.loading ? " Publicando..." : " Publicar con OpenShip"}
                 </button>
                 {deploy?.result && (
                   <div className="mt-2 text-xs">
                     {deploy.result.ok ? (
                       <p className="text-green-300">
-                        ✅ Publicada vía {deploy.result.method}.{" "}
+                         Publicada vía {deploy.result.method}.{" "}
                         {deploy.result.url && (
                           <a href={deploy.result.url} target="_blank" className="underline">
                             {deploy.result.url}
@@ -232,7 +232,7 @@ export default function AdminPage() {
                       </p>
                     ) : (
                       <p className="text-red-300">
-                        ❌ {deploy.result.error}
+                         {deploy.result.error}
                         {deploy.result.instructions && (
                           <span className="block text-gray-500 mt-1">
                             {deploy.result.instructions}
@@ -289,16 +289,16 @@ export default function AdminPage() {
               disabled={scraping}
               className="px-4 py-2 rounded-lg bg-cyan-600 hover:bg-cyan-500 text-white font-semibold text-sm disabled:opacity-50 transition"
             >
-              {scraping ? "🔎 Scrapeando redes..." : "🔎 Scrapear y pre-rellenar"}
+              {scraping ? " Scrapeando redes..." : " Scrapear y pre-rellenar"}
             </button>
 
             {scrapeInfo?.error && (
-              <p className="text-red-400 text-sm">❌ {scrapeInfo.error}</p>
+              <p className="text-red-400 text-sm"> {scrapeInfo.error}</p>
             )}
             {scrapeInfo && !scrapeInfo.error && (
               <div className="text-sm text-gray-300 space-y-1">
                 <p>
-                  ✅ Scrapeado de: {scrapeInfo.sources.join(", ")}
+                   Scrapeado de: {scrapeInfo.sources.join(", ")}
                   {scrapeInfo.mocks?.length > 0 && (
                     <span className="text-amber-400">
                       {" "}
@@ -396,7 +396,7 @@ export default function AdminPage() {
             disabled={loading}
             className="w-full py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-400 hover:to-purple-400 font-bold text-gray-950 disabled:opacity-50 transition"
           >
-            {loading ? "🧠 La IA está eligiendo tu plantilla..." : "Generar mi landing ✨"}
+            {loading ? " La IA está eligiendo tu plantilla..." : "Generar mi landing "}
           </button>
         </form>
 
@@ -407,7 +407,7 @@ export default function AdminPage() {
               onClick={() => publishWithOpenship(lastSlug)}
               className="underline hover:text-cyan-400"
             >
-              Publicar {lastSlug} con OpenShip 🚀
+              Publicar {lastSlug} con OpenShip 
             </button>
           </p>
         )}

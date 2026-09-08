@@ -35,7 +35,7 @@ function RankingBars({ ranking, summary }) {
         );
       })}
       {useUser && (
-        <p className="text-xs text-amber-700 font-medium">★ {summary.totalGeneral}/5 ({summary.total} voto{summary.total!==1?'s':''}) — usuarios</p>
+        <p className="text-xs text-amber-700 font-medium"> {summary.totalGeneral}/5 ({summary.total} voto{summary.total!==1?'s':''}) — usuarios</p>
       )}
     </div>
   );
@@ -53,7 +53,7 @@ function StarRow({ label, value, onChange }) {
             onClick={() => onChange(n)}
             className={`text-2xl leading-none transition ${n <= value ? "text-amber-500" : "text-stone-300 hover:text-amber-300"}`}
             aria-label={`${label} ${n}`}
-          >★</button>
+          ></button>
         ))}
       </div>
       <span className="text-xs text-stone-500 w-8">{value ? `${value}/5` : "—"}</span>
@@ -117,7 +117,7 @@ export default function GastronomiaClient() {
         setMsg({ type:"error", text: d.error || "Error al guardar" });
       } else {
         setSummaries(prev=>({ ...prev, [selected.id]: d }));
-        setMsg({ type:"ok", text: "¡Gracias! Tu calificación se guardó 🦞" });
+        setMsg({ type:"ok", text: "¡Gracias! Tu calificación se guardó " });
         setTimeout(()=> setSelected(null), 1200);
       }
     } catch(e){
@@ -147,7 +147,7 @@ export default function GastronomiaClient() {
           <input
             value={q}
             onChange={e => setQ(e.target.value)}
-            placeholder="🔍 Buscar local, distrito, plato… (ej: cuy, adobo, La Benita)"
+            placeholder=" Buscar local, distrito, plato… (ej: cuy, adobo, La Benita)"
             className="flex-1 min-w-[240px] px-4 py-2 rounded-lg border border-stone-300 focus:border-amber-600 focus:ring-2 focus:ring-amber-200 outline-none text-sm"
           />
           <select value={distrito} onChange={e => setDistrito(e.target.value)} className="px-3 py-2 rounded-lg border border-stone-300 text-sm bg-white">
@@ -201,8 +201,8 @@ export default function GastronomiaClient() {
                   {l.categorias.filter(c=>c!==l.categoria).map(c=> <Badge key={c} color="stone">{c}</Badge>)}
                 </div>
                 <p className="text-sm text-gray-700 mt-3"><b className="text-amber-700">Especialidad:</b> {l.especialidad}</p>
-                <p className="text-xs text-gray-500 mt-1">📍 {l.direccion} · {l.coords[0]}, {l.coords[1]}</p>
-                {l.redes?.facebook && <p className="text-xs mt-1">📘 fb: <span className="text-blue-600">{l.redes.facebook}</span> <span className="text-green-600">✓ curl 200</span></p>}
+                <p className="text-xs text-gray-500 mt-1"> {l.direccion} · {l.coords[0]}, {l.coords[1]}</p>
+                {l.redes?.facebook && <p className="text-xs mt-1"> fb: <span className="text-blue-600">{l.redes.facebook}</span> <span className="text-green-600"> curl 200</span></p>}
                 <RankingBars ranking={l.ranking} summary={summary} />
                 {summary?.comentarios?.length > 0 && (
                   <div className="mt-3 pt-2 border-t border-stone-100">
@@ -212,7 +212,7 @@ export default function GastronomiaClient() {
                 )}
               </div>
               <div className="px-4 py-2 bg-amber-50 border-t border-amber-100 text-xs text-amber-700 flex justify-between items-center">
-                <span className="font-semibold">★ Calificar este local</span><span className="text-stone-500">{l.precioRef}</span>
+                <span className="font-semibold"> Calificar este local</span><span className="text-stone-500">{l.precioRef}</span>
               </div>
             </article>
           )})}
@@ -232,7 +232,7 @@ export default function GastronomiaClient() {
                 <h3 className="font-bold text-lg text-stone-900">{selected.nombre}</h3>
                 <p className="text-xs text-stone-500">{selected.distrito} · {selected.categoria} · {selected.especialidad}</p>
                 {summaries[selected.id]?.total > 0 && (
-                  <p className="text-xs text-amber-700 mt-1">★ {summaries[selected.id].totalGeneral}/5 ({summaries[selected.id].total} votos usuarios)</p>
+                  <p className="text-xs text-amber-700 mt-1"> {summaries[selected.id].totalGeneral}/5 ({summaries[selected.id].total} votos usuarios)</p>
                 )}
               </div>
               <button onClick={()=>!sending && setSelected(null)} className="text-stone-400 hover:text-stone-700 text-2xl leading-none px-2">×</button>
@@ -271,7 +271,7 @@ export default function GastronomiaClient() {
                 onClick={enviar}
                 disabled={!canSend || sending}
                 className={`flex-1 py-2 rounded-lg text-sm font-semibold text-white ${canSend && !sending ? "bg-amber-600 hover:bg-amber-700" : "bg-stone-300 cursor-not-allowed"}`}
-              >{sending ? "Enviando…" : "📤 Enviar calificación"}</button>
+              >{sending ? "Enviando…" : " Enviar calificación"}</button>
             </div>
             {!canSend && <p className="text-xs text-stone-400 text-center pb-3">Califica los 6 criterios para enviar</p>}
             <p className="text-xs text-stone-400 text-center pb-4 px-4">1 voto por local al día por IP · anónimo · sin login (fase 1)</p>
@@ -286,7 +286,7 @@ export default function GastronomiaClient() {
           <p className="text-sm mt-2 text-stone-300">Ninguna guía actual rankea con 6 criterios (precio/platos/atención/limpieza/infraestructura/decoración). Arequipa.net es la mejor pero deliberadamente NO rankea. Esta guía estrena mapeo 8 distritos campiña + Ruta Senca + Ruta Loncco con 48 fichas verificables (Wikipedia + Arequipa.net + municipios + FB curl 200 · 14 fuentes probadas).</p>
           <p className="text-xs mt-4 text-stone-400">Fuente: ~/Jarviz-Vault/02-Investigacion/gastronomia/arequipena-catalogo.md (321 líneas) + gastronomia.json · Vault proyecto 19 · LIVE en Hermes 164.68.126.30:3005/gastronomia</p>
           <div className="mt-6 flex gap-3">
-            <a href="/" className="px-4 py-2 rounded-lg bg-amber-600 text-white text-sm font-semibold hover:bg-amber-500">← Volver Factory</a>
+            <a href="/" className="px-4 py-2 rounded-lg bg-amber-600 text-white text-sm font-semibold hover:bg-amber-500"> Volver Factory</a>
             <a href="/p/demo-restaurante" className="px-4 py-2 rounded-lg border border-stone-600 text-sm hover:border-amber-500">Ver demo restaurante</a>
           </div>
         </div>

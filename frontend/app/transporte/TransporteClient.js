@@ -5,7 +5,7 @@ const T = {
   es: {
     titulo: "Transporte y Movilidad",
     sub: "Paradas de bus, terminales, taxis, gasolineras y estacionamientos en Arequipa",
-    buscar: "🔍 Buscar por tipo o nombre…",
+    buscar: " Buscar por tipo o nombre…",
     todos: "Todos los tipos",
     total: "lugares",
     cargando: "Cargando desde OpenStreetMap…",
@@ -21,7 +21,7 @@ const T = {
   en: {
     titulo: "Transport & Mobility",
     sub: "Bus stops, terminals, taxis, gas stations and parking in Arequipa",
-    buscar: "🔍 Search by type or name…",
+    buscar: " Search by type or name…",
     todos: "All types",
     total: "places",
     cargando: "Loading from OpenStreetMap…",
@@ -38,11 +38,11 @@ const T = {
 
 const TIPOS_API = ["bus_stop", "bus_station", "taxi", "fuel", "parking"];
 const ICONS = {
-  bus_stop: "🚏",
-  bus_station: "🚌",
-  taxi: "🚕",
-  fuel: "⛽",
-  parking: "🅿️",
+  bus_stop: "",
+  bus_station: "",
+  taxi: "",
+  fuel: "",
+  parking: "🅿",
 };
 
 export default function TransporteClient({ lang = "es" }) {
@@ -146,14 +146,14 @@ export default function TransporteClient({ lang = "es" }) {
               {filtrados.slice(0, 200).map((l) => (
                 <article key={l.id} className="bg-white border border-stone-200 rounded-2xl p-5 shadow-sm hover:shadow-md transition">
                   <div className="flex items-center gap-2">
-                    <span className="text-2xl">{ICONS[l.tipo] || "📍"}</span>
+                    <span className="text-2xl">{ICONS[l.tipo] || ""}</span>
                     <span className="text-xs px-2 py-1 rounded-full border border-blue-300 bg-blue-50 text-blue-800">{t.tipos[l.tipo] || l.tipo}</span>
                   </div>
                   <h3 className="font-bold text-lg mt-3 text-stone-900">{l.nombre}</h3>
-                  {l.direccion && <p className="text-xs text-gray-500 mt-1">📍 {l.direccion}</p>}
-                  {l.telefono && <p className="text-xs text-gray-500">📞 {l.telefono}</p>}
+                  {l.direccion && <p className="text-xs text-gray-500 mt-1"> {l.direccion}</p>}
+                  {l.telefono && <p className="text-xs text-gray-500"> {l.telefono}</p>}
                   <p className="text-xs text-gray-400 mt-2">
-                    🗺 {l.lat?.toFixed(4)}, {l.lon?.toFixed(4)} ·{" "}
+                     {l.lat?.toFixed(4)}, {l.lon?.toFixed(4)} ·{" "}
                     <a
                       href={`https://maps.google.com/?q=${l.lat},${l.lon}`}
                       target="_blank"

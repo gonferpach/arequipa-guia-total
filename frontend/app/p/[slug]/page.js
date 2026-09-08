@@ -73,10 +73,10 @@ export default async function LandingPage({ params }) {
   if (!data) {
     return (
       <main className="min-h-screen flex flex-col items-center justify-center gap-4 text-center px-6">
-        <h1 className="text-4xl font-bold">404 😕</h1>
+        <h1 className="text-4xl font-bold">404 </h1>
         <p className="text-gray-400">Esta landing no existe (todavía).</p>
         <a href="/admin" className="text-cyan-400 hover:underline font-semibold">
-          Crear mi landing →
+          Crear mi landing 
         </a>
       </main>
     );

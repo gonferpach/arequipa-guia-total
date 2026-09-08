@@ -1,4 +1,4 @@
-// Proxy Directus CMS → backend 8055 (same-origin, sin CORS)
+// Proxy Directus CMS  backend 8055 (same-origin, sin CORS)
 const DIRECTUS = process.env.DIRECTUS_URL || "http://localhost:8055";
 
 export async function GET(request, { params }) {

@@ -3,14 +3,14 @@ import { useState, useRef, useEffect } from "react";
 
 const T = {
   es: {
-    btn: "🦞 Pregunta a la Guía",
+    btn: " Pregunta a la Guía",
     title: "Pregunta a la Guía",
     sub: "Responde solo con los datos de la guía · ES/EN",
     placeholder: "Ej: ¿Dónde como rocoto relleno?",
     send: "Enviar",
     thinking: "Pensando…",
-    err: "Ups, algo falló. Intenta de nuevo en un momento 🦞",
-    hola: "¡Hola! Soy el bot de la guía 🦞 Pregúntame por picanterías, sitios turísticos, miradores o eventos de Arequipa.",
+    err: "Ups, algo falló. Intenta de nuevo en un momento ",
+    hola: "¡Hola! Soy el bot de la guía  Pregúntame por picanterías, sitios turísticos, miradores o eventos de Arequipa.",
     chips: [
       "¿Dónde como rocoto relleno?",
       "¿Qué sitios UNESCO visito en un día?",
@@ -18,14 +18,14 @@ const T = {
     ],
   },
   en: {
-    btn: "🦞 Ask the Guide",
+    btn: " Ask the Guide",
     title: "Ask the Guide",
     sub: "Answers only from the guide's data · ES/EN",
     placeholder: "E.g.: Where can I eat rocoto relleno?",
     send: "Send",
     thinking: "Thinking…",
-    err: "Oops, something failed. Try again in a moment 🦞",
-    hola: "Hi! I'm the guide's bot 🦞 Ask me about picanterías, attractions, viewpoints or events in Arequipa.",
+    err: "Oops, something failed. Try again in a moment ",
+    hola: "Hi! I'm the guide's bot  Ask me about picanterías, attractions, viewpoints or events in Arequipa.",
     chips: [
       "Where can I eat rocoto relleno?",
       "Which UNESCO sites can I visit in one day?",
@@ -34,7 +34,7 @@ const T = {
   },
 };
 
-// Renderiza el texto del bot: [id:X] → link a la ficha · **texto** → bold
+// Renderiza el texto del bot: [id:X]  link a la ficha · **texto**  bold
 function BotText({ text, lang }) {
   const base = lang === "en" ? "/en" : "";
   const nodes = [];
