@@ -51,9 +51,11 @@ function StarRow({ label, value, onChange }) {
             key={n}
             type="button"
             onClick={() => onChange(n)}
-            className={`text-2xl leading-none transition ${n <= value ? "text-amber-500" : "text-stone-300 hover:text-amber-300"}`}
+            className={`text-2xl leading-none transition cursor-pointer ${n <= value ? "text-amber-500" : "text-stone-300 hover:text-amber-400"}`}
             aria-label={`${label} ${n}`}
-          ></button>
+          >
+            ★
+          </button>
         ))}
       </div>
       <span className="text-xs text-stone-500 w-8">{value ? `${value}/5` : "—"}</span>
