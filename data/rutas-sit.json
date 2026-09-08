@@ -1,0 +1,1399 @@
+{
+ "actualizado": "2026-09-08",
+ "fuente": "OpenStreetMap Overpass route=bus bbox Arequipa (-16.6,-71.7,-16.2,-71.4)",
+ "total_relaciones": 191,
+ "total_rutas": 100,
+ "rutas": [
+  {
+   "operador": "C10 - MegaBus",
+   "codigo": "13",
+   "ejemplo": "Custer 13 : San Hilarión → Av Paucarpata",
+   "variantes": 2,
+   "osm_ids": [
+    17658204,
+    17688058
+   ],
+   "origen": "San Hilarión",
+   "destino": "Av Paucarpata",
+   "color": "#DF1995",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C10 - MegaBus",
+   "codigo": "38",
+   "ejemplo": "Custer 38 : Av Tahuantinsuyo → Av Progreso",
+   "variantes": 2,
+   "osm_ids": [
+    17658205,
+    17688059
+   ],
+   "origen": "Av Tahuantinsuyo",
+   "destino": "Av Progreso",
+   "color": "#DF1995",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C10 - MegaBus",
+   "codigo": "7 de Junio",
+   "ejemplo": "Custer 7 de Junio : Alata → Av Paucarpata",
+   "variantes": 2,
+   "osm_ids": [
+    17658187,
+    17688056
+   ],
+   "origen": "Alata",
+   "destino": "Av Paucarpata",
+   "color": "#DF1995",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C10 - MegaBus",
+   "codigo": "A",
+   "ejemplo": "M3 A : Tiabaya → Paucarpata",
+   "variantes": 2,
+   "osm_ids": [
+    17688052,
+    17688053
+   ],
+   "origen": "Tiabaya",
+   "destino": "Paucarpata",
+   "color": "#DF1995",
+   "tarifa": "1 PEN"
+  },
+  {
+   "operador": "C10 - MegaBus",
+   "codigo": "Avelino",
+   "ejemplo": "Custer Avelino : Avenida Paisajista → Ciudad Blanca",
+   "variantes": 2,
+   "osm_ids": [
+    17636366,
+    17688054
+   ],
+   "origen": "Avenida Paisajista",
+   "destino": "Ciudad Blanca",
+   "color": "#DF1995",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C10 - MegaBus",
+   "codigo": "D",
+   "ejemplo": "Custer D : Av. Paisajista → Los Alpes",
+   "variantes": 2,
+   "osm_ids": [
+    17688055,
+    17688229
+   ],
+   "origen": "Av. Paisajista",
+   "destino": "Los Alpes",
+   "color": "#DF1995",
+   "tarifa": "1 PEN"
+  },
+  {
+   "operador": "C10 - MegaBus",
+   "codigo": "M Upis",
+   "ejemplo": "Custer M Upis : Mansión → Av Paucarpata",
+   "variantes": 2,
+   "osm_ids": [
+    17658252,
+    17688060
+   ],
+   "origen": "Mansión",
+   "destino": "Av Paucarpata",
+   "color": "#DF1995",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C10 - MegaBus",
+   "codigo": "P30",
+   "ejemplo": "M3 P30 : Plaza Huayco → La Salle",
+   "variantes": 2,
+   "osm_ids": [
+    17687963,
+    17687966
+   ],
+   "origen": "Plaza Huayco",
+   "destino": "La Salle",
+   "color": "#DF1995",
+   "tarifa": "1 PEN"
+  },
+  {
+   "operador": "C10 - MegaBus",
+   "codigo": "Tahuaycani",
+   "ejemplo": "Custer Tahuaycani : Calle Peral → Urbanización Micaela Bastidas",
+   "variantes": 1,
+   "osm_ids": [
+    17688208
+   ],
+   "origen": "Calle Peral",
+   "destino": "Urbanización Micaela Bastidas",
+   "color": "#DF1995",
+   "tarifa": "1 PEN"
+  },
+  {
+   "operador": "C11 - Cotum",
+   "codigo": "A",
+   "ejemplo": "Custer A : Plaza de Armas → Alto Libertad",
+   "variantes": 2,
+   "osm_ids": [
+    17687970,
+    17688061
+   ],
+   "origen": "Plaza de Armas",
+   "destino": "Alto Libertad",
+   "color": "#2F4F4F",
+   "tarifa": "1 PEN"
+  },
+  {
+   "operador": "C11 - Cotum",
+   "codigo": "A Pachacutec",
+   "ejemplo": "Custer A Pachacutec : Semirual Pachacutec → Avenida Estados Unidos",
+   "variantes": 2,
+   "osm_ids": [
+    17658212,
+    17688062
+   ],
+   "origen": "Semirual Pachacutec",
+   "destino": "Avenida Estados Unidos",
+   "color": "#2F4F4F",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C11 - Cotum",
+   "codigo": "B",
+   "ejemplo": "Custer B : Plaza de Armas → Alto Libertad",
+   "variantes": 2,
+   "osm_ids": [
+    17678105,
+    17687840
+   ],
+   "origen": "Plaza de Armas",
+   "destino": "Alto Libertad",
+   "color": "#2F4F4F",
+   "tarifa": "1 PEN"
+  },
+  {
+   "operador": "C11 - Cotum",
+   "codigo": "B Pachacutec",
+   "ejemplo": "Custer B Pachacutec : Semirual Pachacutec → Avenida Estados Unidos",
+   "variantes": 2,
+   "osm_ids": [
+    17658213,
+    17688063
+   ],
+   "origen": "Semirual Pachacutec",
+   "destino": "Avenida Estados Unidos",
+   "color": "#2F4F4F",
+   "tarifa": "1 PEN"
+  },
+  {
+   "operador": "C11 - Cotum",
+   "codigo": "Cural",
+   "ejemplo": "Custer Cural : El Cural → La isla",
+   "variantes": 2,
+   "osm_ids": [
+    17688065,
+    17688209
+   ],
+   "origen": "El Cural",
+   "destino": "La isla",
+   "color": "#2F4F4F",
+   "tarifa": "1 PEN"
+  },
+  {
+   "operador": "C11 - Cotum",
+   "codigo": "M Pachacutec",
+   "ejemplo": "Custer M Pachacutec : Semirual Pachacutec → La Salle",
+   "variantes": 2,
+   "osm_ids": [
+    17658215,
+    17688064
+   ],
+   "origen": "Semirual Pachacutec",
+   "destino": "La Salle",
+   "color": "#2F4F4F",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C11 - Cotum",
+   "codigo": "Uchumayo",
+   "ejemplo": "Custer Uchumayo : Uchumayo → La Salle",
+   "variantes": 2,
+   "osm_ids": [
+    17688066,
+    17688210
+   ],
+   "origen": "Uchumayo",
+   "destino": "La Salle",
+   "color": "#2F4F4F",
+   "tarifa": "1 PEN"
+  },
+  {
+   "operador": "C2 - Cono Norte",
+   "codigo": "4A",
+   "ejemplo": "Custer 4A : Ciudad de Dios → Terminal Terrestre",
+   "variantes": 2,
+   "osm_ids": [
+    17620010,
+    17684888
+   ],
+   "origen": "Ciudad de Dios",
+   "destino": "Terminal Terrestre",
+   "color": "#DBD9D1",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C2 - Cono Norte",
+   "codigo": "4B",
+   "ejemplo": "Custer 4B : Villa Hermosa → Terminal Terrestre",
+   "variantes": 2,
+   "osm_ids": [
+    17653560,
+    17683273
+   ],
+   "origen": "Villa Hermosa",
+   "destino": "Terminal Terrestre",
+   "color": "#DBD9D1",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C2 - Cono Norte",
+   "codigo": "4C",
+   "ejemplo": "Custer 4C : Villa Milagros → Avenida Venezuela",
+   "variantes": 2,
+   "osm_ids": [
+    17653490,
+    17684890
+   ],
+   "origen": "Villa Milagros",
+   "destino": "Avenida Venezuela",
+   "color": "#DBD9D1",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C2 - Cono Norte",
+   "codigo": "4D",
+   "ejemplo": "Custer 4D : Villa Los Milagros → Avelino",
+   "variantes": 2,
+   "osm_ids": [
+    17683269,
+    17683270
+   ],
+   "origen": "Villa Los Milagros",
+   "destino": "Avelino",
+   "color": "#DBD9D1",
+   "tarifa": "1 PEN"
+  },
+  {
+   "operador": "C2 - Cono Norte",
+   "codigo": "A",
+   "ejemplo": "Custer A : El Naranjal → Ángeles del Sur Zona A",
+   "variantes": 2,
+   "osm_ids": [
+    17608055,
+    17684886
+   ],
+   "origen": "El Naranjal",
+   "destino": "Ángeles del Sur Zona A",
+   "color": "#DBD9D1",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C2 - Cono Norte",
+   "codigo": "BR",
+   "ejemplo": "Custer BR : Apipa → Terminal Terrestre",
+   "variantes": 2,
+   "osm_ids": [
+    17608045,
+    17684889
+   ],
+   "origen": "Apipa",
+   "destino": "Terminal Terrestre",
+   "color": "#DBD9D1",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C2 - Cono Norte",
+   "codigo": "C",
+   "ejemplo": "Custer C : Ángeles del Sur Zona A → La Isla",
+   "variantes": 3,
+   "osm_ids": [
+    17608077,
+    17658522,
+    17684887
+   ],
+   "origen": "Ángeles del Sur Zona A",
+   "destino": "La Isla",
+   "color": "#DBD9D1",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C2 - Cono Norte",
+   "codigo": "CIMA",
+   "ejemplo": "Custer CIMA : Ciudad Municipal → Ciudad Blanca",
+   "variantes": 2,
+   "osm_ids": [
+    17658550,
+    17658558
+   ],
+   "origen": "Ciudad Municipal",
+   "destino": "Ciudad Blanca",
+   "color": "#DBD9D1",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C2 - Cono Norte",
+   "codigo": "CIMA Bustamante",
+   "ejemplo": "Custer CIMA Bustamante : Apipa → Óvalo Mariscal Castilla",
+   "variantes": 2,
+   "osm_ids": [
+    17683271,
+    17683272
+   ],
+   "origen": "Apipa",
+   "destino": "Óvalo Mariscal Castilla",
+   "color": "#DBD9D1",
+   "tarifa": "1 PEN"
+  },
+  {
+   "operador": "C2 - Cono Norte",
+   "codigo": "Cettar",
+   "ejemplo": "Custer Cettar : Ciudad Municipal → Terminal Terrestre",
+   "variantes": 2,
+   "osm_ids": [
+    17607753,
+    17683267
+   ],
+   "origen": "Ciudad Municipal",
+   "destino": "Terminal Terrestre",
+   "color": "#DBD9D1",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C2 - Cono Norte",
+   "codigo": "El Litoral",
+   "ejemplo": "Custer El Litoral : Chachani → Salaverry",
+   "variantes": 2,
+   "osm_ids": [
+    17658669,
+    17679511
+   ],
+   "origen": "Chachani",
+   "destino": "Salaverry",
+   "color": "#DBD9D1",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C2 - Cono Norte",
+   "codigo": "Peruarbo",
+   "ejemplo": "Custer Peruarbo : Peruarbo → Sepúlveda",
+   "variantes": 2,
+   "osm_ids": [
+    17608051,
+    17683268
+   ],
+   "origen": "Peruarbo",
+   "destino": "Sepúlveda",
+   "color": "#DBD9D1",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C2 - Cono Norte",
+   "codigo": "S",
+   "ejemplo": "Custer S : Alto San Martín → Sor Ana",
+   "variantes": 1,
+   "osm_ids": [
+    17658549
+   ],
+   "origen": "Alto San Martín",
+   "destino": "Sor Ana",
+   "color": "#DBD9D1",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C2 - Cono Norte",
+   "codigo": "Santa Clara",
+   "ejemplo": "Custer Santa Clara : Fundo Cabrería → Villa Miguel Grau",
+   "variantes": 2,
+   "osm_ids": [
+    17608110,
+    17684885
+   ],
+   "origen": "Fundo Cabrería",
+   "destino": "Villa Miguel Grau",
+   "color": "#DBD9D1",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C3 - Transcayma",
+   "codigo": "11 de Mayo",
+   "ejemplo": "Custer 11 de Mayo : Mujeres con Esperanza → Terminal Terrestre",
+   "variantes": 2,
+   "osm_ids": [
+    17653636,
+    17683264
+   ],
+   "origen": "Mujeres con Esperanza",
+   "destino": "Terminal Terrestre",
+   "color": "#FEDD00",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C3 - Transcayma",
+   "codigo": "Casimiro",
+   "ejemplo": "Custer Casimiro : Casimiro → Coliseo Arequipa",
+   "variantes": 2,
+   "osm_ids": [
+    17664629,
+    17664645
+   ],
+   "origen": "Casimiro",
+   "destino": "Coliseo Arequipa",
+   "color": "#FEDD00",
+   "tarifa": "1 PEN"
+  },
+  {
+   "operador": "C3 - Transcayma",
+   "codigo": "Chapi",
+   "ejemplo": "Custer Chapi : Primero de Junio → Avenida Venezuela",
+   "variantes": 2,
+   "osm_ids": [
+    17664509,
+    17664511
+   ],
+   "origen": "Primero de Junio",
+   "destino": "Avenida Venezuela",
+   "color": "#FEDD00",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C3 - Transcayma",
+   "codigo": "Embajada",
+   "ejemplo": "M3 Embajada : Los Pioneros → Terminal Terrestre",
+   "variantes": 2,
+   "osm_ids": [
+    17659544,
+    17686763
+   ],
+   "origen": "Los Pioneros",
+   "destino": "Terminal Terrestre",
+   "color": "#FEDD00",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C3 - Transcayma",
+   "codigo": "Enace",
+   "ejemplo": "Custer Enace : Urbanización Deán Valdivia → Avenida Venezuela",
+   "variantes": 2,
+   "osm_ids": [
+    17445532,
+    17445672
+   ],
+   "origen": "Urbanización Deán Valdivia",
+   "destino": "Avenida Venezuela",
+   "color": "#FEDD00",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C3 - Transcayma",
+   "codigo": "San Miguel",
+   "ejemplo": "Custer San Miguel : Sector 7 Deán Valdivia → Las Convenciones",
+   "variantes": 2,
+   "osm_ids": [
+    17515510,
+    17684893
+   ],
+   "origen": "Sector 7 Deán Valdivia",
+   "destino": "Las Convenciones",
+   "color": "#FEDD00",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C3 - Transcayma",
+   "codigo": "Zamacola",
+   "ejemplo": "M3 Zamacola : Terminal Terrestre → Terminal Pesquero",
+   "variantes": 2,
+   "osm_ids": [
+    17658664,
+    17659504
+   ],
+   "origen": "Terminal Terrestre",
+   "destino": "Terminal Pesquero",
+   "color": "#FEDD00",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C4 - Unión Aqp",
+   "codigo": "A",
+   "ejemplo": "Custer A : San Luis → Ormeño",
+   "variantes": 2,
+   "osm_ids": [
+    17518939,
+    17684894
+   ],
+   "origen": "San Luis",
+   "destino": "Ormeño",
+   "color": "#FF6900",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C4 - Unión Aqp",
+   "codigo": "A1",
+   "ejemplo": "Custer A1 : El Mirador → Ruta del Sillar",
+   "variantes": 2,
+   "osm_ids": [
+    17633933,
+    17688012
+   ],
+   "origen": "El mirador",
+   "destino": "Ruta del sillar",
+   "color": "#FF6900",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C4 - Unión Aqp",
+   "codigo": "A15",
+   "ejemplo": "Custer A15 : Revolución → Av La Paz",
+   "variantes": 2,
+   "osm_ids": [
+    17633936,
+    17688014
+   ],
+   "origen": "Revolución",
+   "destino": "Av La Paz",
+   "color": "#FF6900",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C4 - Unión Aqp",
+   "codigo": "Alto Selva Alegre",
+   "ejemplo": "Custer Alto Selva Alegre : San Luis → Palacio de Bellas Artes",
+   "variantes": 2,
+   "osm_ids": [
+    17664775,
+    17664776
+   ],
+   "origen": "San Luis",
+   "destino": "Palacio de Bellas Artes",
+   "color": "#FF6900",
+   "tarifa": "1 PEN"
+  },
+  {
+   "operador": "C4 - Unión Aqp",
+   "codigo": "C",
+   "ejemplo": "Custer C : Señor de los milagros → Ormeño",
+   "variantes": 2,
+   "osm_ids": [
+    17581799,
+    17688016
+   ],
+   "origen": "Señor de los milagros",
+   "destino": "Ormeño",
+   "color": "#FF6900",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C4 - Unión Aqp",
+   "codigo": "D",
+   "ejemplo": "Custer D : San Luis → Terminal Terrestre",
+   "variantes": 2,
+   "osm_ids": [
+    17633924,
+    17683265
+   ],
+   "origen": "San Luis",
+   "destino": "Terminal Terrestre",
+   "color": "#FF6900",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C4 - Unión Aqp",
+   "codigo": "D Huaranguillo",
+   "ejemplo": "Custer D Huaranguillo : San Luis → Huaranguillo",
+   "variantes": 2,
+   "osm_ids": [
+    17681083,
+    17683274
+   ],
+   "origen": "San Luis",
+   "destino": "Huaranguillo",
+   "color": "#FF6900",
+   "tarifa": "1 PEN"
+  },
+  {
+   "operador": "C4 - Unión Aqp",
+   "codigo": "Gráficos",
+   "ejemplo": "Custer Gráficos : Av. Emancipación → Salaverry",
+   "variantes": 2,
+   "osm_ids": [
+    17664646,
+    17664647
+   ],
+   "origen": "Av. Emancipación",
+   "destino": "Salaverry",
+   "color": "#FF6900",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C4 - Unión Aqp",
+   "codigo": "Juan XXIII",
+   "ejemplo": "Custer Juan XXIII : La galaxia → Avelino",
+   "variantes": 2,
+   "osm_ids": [
+    17664648,
+    17664649
+   ],
+   "origen": "La galaxia",
+   "destino": "Avelino",
+   "color": "#FF6900",
+   "tarifa": "1 PEN"
+  },
+  {
+   "operador": "C4 - Unión Aqp",
+   "codigo": "Royal Bus B",
+   "ejemplo": "Custer Royal Bus B : Señor de los milagros → Terminal Terrestre",
+   "variantes": 2,
+   "osm_ids": [
+    17619994,
+    17688015
+   ],
+   "origen": "Señor de los milagros",
+   "destino": "Terminal Terrestre",
+   "color": "#FF6900",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C4 - Unión Aqp",
+   "codigo": "San Luis B",
+   "ejemplo": "Custer San Luis B : San Luis → Avelino",
+   "variantes": 2,
+   "osm_ids": [
+    17626535,
+    17684907
+   ],
+   "origen": "San Luis",
+   "destino": "Avelino",
+   "color": "#FF6900",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C4 - Unión Aqp",
+   "codigo": "Transpol B",
+   "ejemplo": "Custer Transpol B : El Mirador → Avelino",
+   "variantes": 2,
+   "osm_ids": [
+    17633932,
+    17688013
+   ],
+   "origen": "El Mirador",
+   "destino": "Avelino",
+   "color": "#FF6900",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C4 - Unión Aqp",
+   "codigo": "Umacollo",
+   "ejemplo": "Custer Umacollo : San Luis → Umacollo",
+   "variantes": 2,
+   "osm_ids": [
+    17633927,
+    17683266
+   ],
+   "origen": "San Luis",
+   "destino": "Umacollo",
+   "color": "#FF6900",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C4 - Unión Aqp",
+   "codigo": "Villa Ecológica",
+   "ejemplo": "Custer Villa Ecológica : Villa Ecológica → Ormeño",
+   "variantes": 2,
+   "osm_ids": [
+    17608042,
+    17687967
+   ],
+   "origen": "Villa Ecológica",
+   "destino": "Ormeño",
+   "color": "#FF6900",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C5 - EtraBus",
+   "codigo": "A",
+   "ejemplo": "Combi A : Jerusalen → Estadio Melgar",
+   "variantes": 2,
+   "osm_ids": [
+    17664824,
+    17664825
+   ],
+   "origen": "Jerusalen",
+   "destino": "Estadio Melgar",
+   "color": "#FF0000",
+   "tarifa": "1 PEN"
+  },
+  {
+   "operador": "C5 - EtraBus",
+   "codigo": "Atalaya",
+   "ejemplo": "Combi Atalaya : Atalaya → Estadio Melgar",
+   "variantes": 2,
+   "osm_ids": [
+    17664795,
+    17664821
+   ],
+   "origen": "Atalaya",
+   "destino": "Estadio Melgar",
+   "color": "#FF0000",
+   "tarifa": "1 PEN"
+  },
+  {
+   "operador": "C5 - EtraBus",
+   "codigo": "C",
+   "ejemplo": "Custer C : Los Olivos → Estadio Melgar",
+   "variantes": 2,
+   "osm_ids": [
+    17664826,
+    17664827
+   ],
+   "origen": "Los Olivos",
+   "destino": "Estadio Melgar",
+   "color": "#FF0000",
+   "tarifa": "1 PEN"
+  },
+  {
+   "operador": "C5 - EtraBus",
+   "codigo": "C Atalaya",
+   "ejemplo": "Custer C Atalaya : Atalaya → Terminal Terrestre",
+   "variantes": 2,
+   "osm_ids": [
+    17664793,
+    17664794
+   ],
+   "origen": "Atalaya",
+   "destino": "Terminal Terrestre",
+   "color": "#FF0000",
+   "tarifa": "1 PEN"
+  },
+  {
+   "operador": "C5 - EtraBus",
+   "codigo": "Cenepa",
+   "ejemplo": "M3 Cenepa : Heroes del Cenepa → Estadio Melgar",
+   "variantes": 2,
+   "osm_ids": [
+    17664787,
+    17664788
+   ],
+   "origen": "Heroes del Cenepa",
+   "destino": "Estadio Melgar",
+   "color": "#FF0000",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C5 - EtraBus",
+   "codigo": "Miguel Grau",
+   "ejemplo": "Custer Miguel Grau : Miguel Grau → Estadio Melgar",
+   "variantes": 2,
+   "osm_ids": [
+    17664791,
+    17664792
+   ],
+   "origen": "Miguel Grau",
+   "destino": "Estadio Melgar",
+   "color": "#FF0000",
+   "tarifa": "1 PEN"
+  },
+  {
+   "operador": "C5 - EtraBus",
+   "codigo": "Mirador Berlín",
+   "ejemplo": "Custer Mirador Berlín : Berlín → Estadio Melgar",
+   "variantes": 2,
+   "osm_ids": [
+    17664822,
+    17664823
+   ],
+   "origen": "Berlín",
+   "destino": "Estadio Melgar",
+   "color": "#FF0000",
+   "tarifa": "1 PEN"
+  },
+  {
+   "operador": "C5 - EtraBus",
+   "codigo": "Olivos",
+   "ejemplo": "Custer Olivos : Los Olivos → Terminal Terrestre",
+   "variantes": 2,
+   "osm_ids": [
+    17664789,
+    17664790
+   ],
+   "origen": "Los Olivos",
+   "destino": "Terminal Terrestre",
+   "color": "#FF0000",
+   "tarifa": "1 PEN"
+  },
+  {
+   "operador": "C5 - EtraBus",
+   "codigo": "San Jeronimo",
+   "ejemplo": "Custer San Jeronimo : San Jerónimo → Estadio Melgar",
+   "variantes": 2,
+   "osm_ids": [
+    17687934,
+    17688180
+   ],
+   "origen": "San Jerónimo",
+   "destino": "Estadio Melgar",
+   "color": "#FF0000",
+   "tarifa": "1 PEN"
+  },
+  {
+   "operador": "C5 - EtraBus",
+   "codigo": "Señor de Huanca",
+   "ejemplo": "Custer Señor de Huanca : Señor de Huanca → Estadio Melgar",
+   "variantes": 2,
+   "osm_ids": [
+    17688018,
+    17688207
+   ],
+   "origen": "Señor de Huanca",
+   "destino": "Estadio Melgar",
+   "color": "#FF0000",
+   "tarifa": "1 PEN"
+  },
+  {
+   "operador": "C6 - Unión Grau",
+   "codigo": "A",
+   "ejemplo": "Custer A : Miguel Grau → La Merced",
+   "variantes": 2,
+   "osm_ids": [
+    17634339,
+    17688024
+   ],
+   "origen": "Miguel Grau",
+   "destino": "La Merced",
+   "color": "#AFA96E",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C6 - Unión Grau",
+   "codigo": "B",
+   "ejemplo": "Custer B : Miguel Grau → Cementerio Apacheta",
+   "variantes": 2,
+   "osm_ids": [
+    17636328,
+    17688022
+   ],
+   "origen": "Miguel Grau",
+   "destino": "Cementerio Apacheta",
+   "color": "#AFA96E",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C6 - Unión Grau",
+   "codigo": "B2",
+   "ejemplo": "Custer B2 : Miguel Grau → Terminal Terrestre",
+   "variantes": 2,
+   "osm_ids": [
+    17633938,
+    17688019
+   ],
+   "origen": "Miguel Grau",
+   "destino": "Terminal Terrestre",
+   "color": "#AFA96E",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C6 - Unión Grau",
+   "codigo": "B2 A",
+   "ejemplo": "Custer B2 A : Miguel Grau → Terminal Terrestre",
+   "variantes": 2,
+   "osm_ids": [
+    17636285,
+    17688020
+   ],
+   "origen": "Miguel Grau",
+   "destino": "Terminal Terrestre",
+   "color": "#AFA96E",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C6 - Unión Grau",
+   "codigo": "C",
+   "ejemplo": "Custer C : Miguel Grau → Plaza las Américas",
+   "variantes": 2,
+   "osm_ids": [
+    17636305,
+    17688021
+   ],
+   "origen": "Miguel Grau",
+   "destino": "Plaza las Américas",
+   "color": "#AFA96E",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C6 - Unión Grau",
+   "codigo": "H",
+   "ejemplo": "Custer H : Miguel Grau → Alto de la Alianza",
+   "variantes": 2,
+   "osm_ids": [
+    17636635,
+    17688023
+   ],
+   "origen": "Miguel Grau",
+   "destino": "Alto de la Alianza",
+   "color": "#AFA96E",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C7 - AqpMasivo",
+   "codigo": "01",
+   "ejemplo": "Custer 01 : Plaza Paucarpata → C. José Olaya",
+   "variantes": 2,
+   "osm_ids": [
+    17664828,
+    17664829
+   ],
+   "origen": "Plaza Paucarpata",
+   "destino": "C. José Olaya",
+   "color": "#8D4925",
+   "tarifa": "1 PEN"
+  },
+  {
+   "operador": "C7 - AqpMasivo",
+   "codigo": "02",
+   "ejemplo": "Custer 02 : Plaza Paucarpata → C. José Olaya",
+   "variantes": 2,
+   "osm_ids": [
+    17664830,
+    17664831
+   ],
+   "origen": "Plaza Paucarpata",
+   "destino": "C. José Olaya",
+   "color": "#8D4925",
+   "tarifa": "1 PEN"
+  },
+  {
+   "operador": "C7 - AqpMasivo",
+   "codigo": "05",
+   "ejemplo": "Custer 05 : Campo de Marte → Alto Libertad",
+   "variantes": 2,
+   "osm_ids": [
+    17664971,
+    17664972
+   ],
+   "origen": "Campo de Marte",
+   "destino": "Alto Libertad",
+   "color": "#8D4925",
+   "tarifa": "1 PEN"
+  },
+  {
+   "operador": "C7 - AqpMasivo",
+   "codigo": "06",
+   "ejemplo": "Custer 06 : Huacsapata → Avelino",
+   "variantes": 2,
+   "osm_ids": [
+    17664973,
+    17664974
+   ],
+   "origen": "Huacsapata",
+   "destino": "Avelino",
+   "color": "#8D4925",
+   "tarifa": "1 PEN"
+  },
+  {
+   "operador": "C7 - AqpMasivo",
+   "codigo": "07",
+   "ejemplo": "M3 07 : Guardia Civil → Vallecito",
+   "variantes": 2,
+   "osm_ids": [
+    17664975,
+    17775694
+   ],
+   "origen": "Guardia Civil",
+   "destino": "Vallecito",
+   "color": "#8D4925",
+   "tarifa": "1 PEN"
+  },
+  {
+   "operador": "C7 - AqpMasivo",
+   "codigo": "09",
+   "ejemplo": "M3 09 : Campo de Marte → La Católica",
+   "variantes": 2,
+   "osm_ids": [
+    17664977,
+    17664978
+   ],
+   "origen": "Campo de Marte",
+   "destino": "La Católica",
+   "color": "#8D4925",
+   "tarifa": "1 PEN"
+  },
+  {
+   "operador": "C7 - AqpMasivo",
+   "codigo": "3",
+   "ejemplo": "Custer 3 : Baños de Jesús → Aeropuerto",
+   "variantes": 1,
+   "osm_ids": [
+    17634360
+   ],
+   "origen": "Baños de Jesús",
+   "destino": "Aeropuerto",
+   "color": "#8D4925",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C7 - AqpMasivo",
+   "codigo": "7-04",
+   "ejemplo": "Custer 7-04 : Aeropuerto → Baños de Jesús",
+   "variantes": 1,
+   "osm_ids": [
+    17688025
+   ],
+   "origen": "Aeropuerto",
+   "destino": "Baños de Jesús",
+   "color": "#8D4925",
+   "tarifa": "1 PEN"
+  },
+  {
+   "operador": "C7 - AqpMasivo",
+   "codigo": "B",
+   "ejemplo": "Combi B : Villa Santa Rosa → Terminal Terrestre",
+   "variantes": 2,
+   "osm_ids": [
+    17636304,
+    17688026
+   ],
+   "origen": "Villa Santa Rosa",
+   "destino": "Terminal Terrestre",
+   "color": "#8D4925",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C7 - AqpMasivo",
+   "codigo": "C",
+   "ejemplo": "Combi C : Israel → Terminal Terrestre",
+   "variantes": 2,
+   "osm_ids": [
+    17677829,
+    17688027
+   ],
+   "origen": "Israel",
+   "destino": "Terminal Terrestre",
+   "color": "#8D4925",
+   "tarifa": "1 PEN"
+  },
+  {
+   "operador": "C8 - Bus Characato",
+   "codigo": "A",
+   "ejemplo": "Custer A : Penal → Filtro",
+   "variantes": 2,
+   "osm_ids": [
+    17643025,
+    17688039
+   ],
+   "origen": "Penal",
+   "destino": "Filtro",
+   "color": "#00C996",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C8 - Bus Characato",
+   "codigo": "LA",
+   "ejemplo": "Custer LA : Characato → La Paz",
+   "variantes": 2,
+   "osm_ids": [
+    17636375,
+    17688030
+   ],
+   "origen": "Characato",
+   "destino": "La Paz",
+   "color": "#00C996",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C8 - Bus Characato",
+   "codigo": "LB Cerrillos",
+   "ejemplo": "Custer LB Cerrillos : 2 de Mayo → C. Milagro",
+   "variantes": 2,
+   "osm_ids": [
+    17688017,
+    17688029
+   ],
+   "origen": "2 de Mayo",
+   "destino": "C. Milagro",
+   "color": "#00C996",
+   "tarifa": ""
+  },
+  {
+   "operador": "C8 - Bus Characato",
+   "codigo": "LB Mollebaya",
+   "ejemplo": "Custer LB Mollebaya : 2 de Mayo → Mollebaya",
+   "variantes": 2,
+   "osm_ids": [
+    17684891,
+    17688028
+   ],
+   "origen": "2 de Mayo",
+   "destino": "Mollebaya",
+   "color": "#00C996",
+   "tarifa": ""
+  },
+  {
+   "operador": "C8 - Bus Characato",
+   "codigo": "T Quequeña",
+   "ejemplo": "Custer T Quequeña : Quequeña → Terminal Terrestre",
+   "variantes": 2,
+   "osm_ids": [
+    17677911,
+    17688038
+   ],
+   "origen": "Quequeña",
+   "destino": "Terminal Terrestre",
+   "color": "#00C996",
+   "tarifa": "1 PEN"
+  },
+  {
+   "operador": "C8 - Bus Characato",
+   "codigo": "T San Antorio",
+   "ejemplo": "Custer T San Antorio : San Antonio → Terminal Terrestre",
+   "variantes": 2,
+   "osm_ids": [
+    17642932,
+    17688031
+   ],
+   "origen": "San Antonio",
+   "destino": "Terminal Terrestre",
+   "color": "#00C996",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C9 - Emarsistran",
+   "codigo": "A",
+   "ejemplo": "Custer A : La Campiña II → Tahuantinsuyo",
+   "variantes": 2,
+   "osm_ids": [
+    17664981,
+    17664982
+   ],
+   "origen": "La Campiña II",
+   "destino": "Tahuantinsuyo",
+   "color": "#10069f",
+   "tarifa": "1 PEN"
+  },
+  {
+   "operador": "C9 - Emarsistran",
+   "codigo": "Alto Libertad",
+   "ejemplo": "Custer Alto Libertad : Avenida Paisajista → Alto Libertad",
+   "variantes": 2,
+   "osm_ids": [
+    17644947,
+    17688046
+   ],
+   "origen": "Avenida Paisajista",
+   "destino": "Alto Libertad",
+   "color": "#10069f",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C9 - Emarsistran",
+   "codigo": "B",
+   "ejemplo": "Custer B : La Campiña II → Parque Selva Alegre",
+   "variantes": 2,
+   "osm_ids": [
+    17511052,
+    17688040
+   ],
+   "origen": "La Campiña II",
+   "destino": "Parque Selva Alegre",
+   "color": "#10069f",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C9 - Emarsistran",
+   "codigo": "C",
+   "ejemplo": "Custer C : La Campiña II → Mariano Melgar",
+   "variantes": 2,
+   "osm_ids": [
+    17664983,
+    17664984
+   ],
+   "origen": "La Campiña II",
+   "destino": "Mariano Melgar",
+   "color": "#10069f",
+   "tarifa": "1 PEN"
+  },
+  {
+   "operador": "C9 - Emarsistran",
+   "codigo": "Ciudad Mi Trabajo A",
+   "ejemplo": "Custer Ciudad Mi Trabajo A : El Pasto → Pachacutec",
+   "variantes": 1,
+   "osm_ids": [
+    17644902
+   ],
+   "origen": "El Pasto",
+   "destino": "Pachacutec",
+   "color": "#10069f",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C9 - Emarsistran",
+   "codigo": "Ciudad Mi Trabajo M",
+   "ejemplo": "Custer Ciudad Mi Trabajo M : La Mansión → La Salle",
+   "variantes": 1,
+   "osm_ids": [
+    17644912
+   ],
+   "origen": "La Mansión",
+   "destino": "La Salle",
+   "color": "#10069f",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C9 - Emarsistran",
+   "codigo": "Ciudad mi trabajo A",
+   "ejemplo": "Custer Ciudad mi trabajo A : Pachacutec → El pasto",
+   "variantes": 1,
+   "osm_ids": [
+    17688044
+   ],
+   "origen": "Pachacutec",
+   "destino": "El pasto",
+   "color": "#10069f",
+   "tarifa": "1 PEN"
+  },
+  {
+   "operador": "C9 - Emarsistran",
+   "codigo": "Ciudad mi trabajo M",
+   "ejemplo": "Custer Ciudad mi trabajo M : La Salle → La mansión",
+   "variantes": 1,
+   "osm_ids": [
+    17688045
+   ],
+   "origen": "La Salle",
+   "destino": "La mansión",
+   "color": "#10069f",
+   "tarifa": "1 PEN"
+  },
+  {
+   "operador": "C9 - Emarsistran",
+   "codigo": "Cotaspa 4",
+   "ejemplo": "Custer Cotaspa 4 : El Golf → Enace",
+   "variantes": 2,
+   "osm_ids": [
+    17511191,
+    17688048
+   ],
+   "origen": "El Golf",
+   "destino": "Enace",
+   "color": "#10069f",
+   "tarifa": "1 PEN"
+  },
+  {
+   "operador": "C9 - Emarsistran",
+   "codigo": "D",
+   "ejemplo": "Custer D : La Campiña II → Alto Misti",
+   "variantes": 2,
+   "osm_ids": [
+    17664985,
+    17664986
+   ],
+   "origen": "La Campiña II",
+   "destino": "Alto Misti",
+   "color": "#10069f",
+   "tarifa": "1 PEN"
+  },
+  {
+   "operador": "C9 - Emarsistran",
+   "codigo": "Dolores",
+   "ejemplo": "Custer Dolores : La Campiña III → La Salle",
+   "variantes": 2,
+   "osm_ids": [
+    17643070,
+    17688041
+   ],
+   "origen": "La Campiña III",
+   "destino": "La Salle",
+   "color": "#10069f",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C9 - Emarsistran",
+   "codigo": "Independencia",
+   "ejemplo": "Custer Independencia : El Golf → Calle Teniente Palacios",
+   "variantes": 2,
+   "osm_ids": [
+    17654414,
+    17688206
+   ],
+   "origen": "El Golf",
+   "destino": "Calle Teniente Palacios",
+   "color": "#10069f",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C9 - Emarsistran",
+   "codigo": "Monterrey Corbacho",
+   "ejemplo": "Custer Monterrey Corbacho : Avenida Paisajista → Avenida La Paz",
+   "variantes": 2,
+   "osm_ids": [
+    17658190,
+    17688051
+   ],
+   "origen": "Avenida Paisajista",
+   "destino": "Avenida La Paz",
+   "color": "#10069f",
+   "tarifa": "1.30 PEN"
+  },
+  {
+   "operador": "C9 - Emarsistran",
+   "codigo": "San Martín",
+   "ejemplo": "Custer San Martín : La Campiña III → La Salle",
+   "variantes": 2,
+   "osm_ids": [
+    17664987,
+    17664988
+   ],
+   "origen": "La Campiña III",
+   "destino": "La Salle",
+   "color": "#10069f",
+   "tarifa": "1 PEN"
+  },
+  {
+   "operador": "C9 - Emarsistran",
+   "codigo": "Simon Bolivar AntiHorario",
+   "ejemplo": "Custer Simon Bolivar AntiHorario : Av Independencia → Cruce Sabandía",
+   "variantes": 1,
+   "osm_ids": [
+    17688050
+   ],
+   "origen": "Av Independencia",
+   "destino": "Cruce Sabandía",
+   "color": "#10069f",
+   "tarifa": "1 PEN"
+  },
+  {
+   "operador": "C9 - Emarsistran",
+   "codigo": "Simon Bolivar Horario",
+   "ejemplo": "Custer Simon Bolivar Horario : Cruce Sabandía → Av Independencia",
+   "variantes": 1,
+   "osm_ids": [
+    17688049
+   ],
+   "origen": "Cruce Sabandía",
+   "destino": "Av Independencia",
+   "color": "#10069f",
+   "tarifa": "1 PEN"
+  },
+  {
+   "operador": "C9 - Emarsistran",
+   "codigo": "Socabaya B",
+   "ejemplo": "Custer Socabaya B : Horacio Zevallos → Pachacutec",
+   "variantes": 2,
+   "osm_ids": [
+    17654231,
+    17688047
+   ],
+   "origen": "Horacio Zevallos",
+   "destino": "Pachacutec",
+   "color": "#10069f",
+   "tarifa": "1.30 PEN"
+  }
+ ]
+}
