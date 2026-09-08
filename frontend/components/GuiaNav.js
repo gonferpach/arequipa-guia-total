@@ -9,6 +9,7 @@ export default function GuiaNav({ lang = "es", switchHref = "/en/guia" }) {
         hoteles: "Hoteles",
         turismo: "Turismo",
         eventos: "Eventos",
+        rutas: "Rutas",
         switch: "EN",
       }
     : {
@@ -18,6 +19,7 @@ export default function GuiaNav({ lang = "es", switchHref = "/en/guia" }) {
         hoteles: "Hotels",
         turismo: "Attractions",
         eventos: "Events",
+        rutas: "Routes",
         switch: "ES",
       };
   const base = es ? "" : "/en";
@@ -34,6 +36,7 @@ export default function GuiaNav({ lang = "es", switchHref = "/en/guia" }) {
           <a href={`${base}/hoteles`} className="hover:text-amber-300 whitespace-nowrap hidden sm:inline">{t.hoteles}</a>
           <a href={`${base}/turismo`} className="hover:text-amber-300 whitespace-nowrap">{t.turismo}</a>
           <a href={`${base}/eventos`} className="hover:text-amber-300 whitespace-nowrap hidden sm:inline">{t.eventos}</a>
+          <a href={`${base}/itinerarios`} className="hover:text-amber-300 whitespace-nowrap hidden sm:inline">{t.rutas}</a>
           <a
             href={switchHref}
             className="px-2 py-0.5 rounded border border-stone-600 hover:border-amber-400 text-xs font-semibold shrink-0"

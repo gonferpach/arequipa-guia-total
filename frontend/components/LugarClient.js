@@ -51,20 +51,84 @@ export default function LugarClient({ id, lang = "es" }) {
       </main>
     );
 
+  const digits = (place.phone || "").replace(/\D/g, "");
+  const movil = digits.length === 9 && digits.startsWith("9") ? `51${digits}` : digits.length === 11 && digits.startsWith("51") ? digits : null;
+  const waText = encodeURIComponent(es ? `Hola, los encontre en Arequipa Guia Total y quiero info.` : `Hi, I found you on Arequipa Guide and would like info.`);
+
   return (
     <div className="min-h-screen bg-white text-gray-900">
+      <section className="relative flex items-center text-white overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-stone-900 via-amber-800 to-stone-800" />
+        <div className="relative z-10 max-w-4xl mx-auto px-6 py-12 w-full">
+          <a href={es ? "/guia" : "/en/guia"} className="text-sm text-amber-300 hover:underline">
+            {es ? "Volver a la guia" : "Back to the guide"}
+          </a>
+          <div className="flex flex-wrap items-center gap-2 mt-3">
+            {place.category && (
+              <span className="text-xs px-2 py-1 rounded-full border border-amber-300/60 bg-amber-400/20">{place.category}</span>
+            )}
+            {place.district && (
+              <span className="text-xs px-2 py-1 rounded-full border border-white/40 bg-white/10">{place.district}</span>
+            )}
+            {place.parking && (
+              <span className="text-xs px-2 py-1 rounded-full bg-green-600 font-semibold">{es ? "Con cochera" : "With parking"}</span>
+            )}
+          </div>
+          <h1 className="text-4xl md:text-5xl font-extrabold mt-3">{place.title}</h1>
+          {place.address && <p className="mt-2 opacity-90">{place.address}</p>}
+          <div className="flex flex-wrap gap-3 mt-6">
+            {movil && (
+              <a
+                href={`https://wa.me/${movil}?text=${waText}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-5 py-2.5 rounded-xl bg-green-600 hover:bg-green-500 font-semibold text-sm"
+              >
+                {es ? "WhatsApp" : "WhatsApp"}
+              </a>
+            )}
+            {digits && (
+              <a
+                href={`tel:+${digits.startsWith("51") ? digits : `51${digits}`}`}
+                className="px-5 py-2.5 rounded-xl bg-white text-stone-900 hover:bg-stone-100 font-semibold text-sm"
+              >
+                {es ? "Llamar" : "Call"}
+              </a>
+            )}
+            {place.latitude && place.longitude && (
+              <a
+                href={`https://maps.google.com/?q=${place.latitude},${place.longitude}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-5 py-2.5 rounded-xl border border-white/50 hover:border-white font-semibold text-sm"
+              >
+                {es ? "Como llegar" : "Directions"}
+              </a>
+            )}
+          </div>
+        </div>
+      </section>
       <section className="max-w-4xl mx-auto px-6 py-10">
-        <a
-          href={es ? "/guia" : "/en/guia"}
-          className="text-sm text-amber-700 hover:underline"
-        >
-          {es ? "Volver a la guia" : "Back to the guide"}
-        </a>
-        <div className="mt-4 max-w-2xl">
+        <div className="max-w-2xl">
           <PlaceCard place={place} lang={lang} />
         </div>
         <div className="mt-6">
           <CategoryMap places={[place]} height={340} />
+        </div>
+        <div className="mt-8 bg-amber-50 border border-amber-200 rounded-2xl p-5 text-sm text-amber-900 flex flex-wrap items-center justify-between gap-3">
+          <span>
+            {es
+              ? `Este es tu negocio? Reclama esta ficha y agrega fotos, carta y reservas.`
+              : `Is this your business? Claim this listing and add photos, menu and bookings.`}
+          </span>
+          <a
+            href={movil ? `https://wa.me/${movil}?text=${waText}` : es ? "/admin" : "/admin"}
+            target={movil ? "_blank" : undefined}
+            rel={movil ? "noopener noreferrer" : undefined}
+            className="px-4 py-2 rounded-lg bg-amber-600 hover:bg-amber-500 text-white font-semibold text-sm whitespace-nowrap"
+          >
+            {es ? "Reclamar ficha" : "Claim listing"}
+          </a>
         </div>
       </section>
     </div>

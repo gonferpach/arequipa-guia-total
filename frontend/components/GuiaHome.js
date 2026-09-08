@@ -50,6 +50,13 @@ const LIVE = [
     en: ["What's on & events", "Yanahuara fair, picanteria tours, San Camilo market, August Fiestas and more."],
   },
   {
+    href: "/itinerarios",
+    hrefEn: "/en/itinerarios",
+    tag: "RUTA",
+    es: ["Itinerarios armados", "1 dia, 2 dias y fin de semana: turismo, restaurante, cafe y noche en ruta con mapa."],
+    en: ["Ready-made itineraries", "1 day, 2 days and weekend: attractions, restaurants, coffee and nightlife on a mapped route."],
+  },
+  {
     href: "/transporte",
     hrefEn: "/en/transporte",
     tag: "MOVER",
